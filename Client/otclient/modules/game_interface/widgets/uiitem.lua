@@ -111,12 +111,16 @@ function UIItem:onHoverChange(hovered)
 
     if hovered then
         local item = self:getItem()
-        if item and g_itemTooltip then
-            g_itemTooltip.requestItemTooltip(item:getId())
+        if item then
+            local tooltipModule = g_itemTooltip or modules.game_itemtooltip
+            if tooltipModule then
+                tooltipModule.requestItemTooltip(item:getId())
+            end
         end
     else
-        if g_itemTooltip then
-            g_itemTooltip.hideTooltip()
+        local tooltipModule = g_itemTooltip or modules.game_itemtooltip
+        if tooltipModule then
+            tooltipModule.hideTooltip()
         end
     end
 

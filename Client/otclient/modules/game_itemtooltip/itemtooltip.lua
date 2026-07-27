@@ -1,4 +1,5 @@
 g_itemTooltip = {}
+_G.g_itemTooltip = g_itemTooltip
 
 local tooltipWindow = nil
 local OPCODE_ITEM_TOOLTIP = 251
