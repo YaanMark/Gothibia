@@ -109,6 +109,17 @@ end
 function UIItem:onHoverChange(hovered)
     UIWidget.onHoverChange(self, hovered)
 
+    if hovered then
+        local item = self:getItem()
+        if item and g_itemTooltip then
+            g_itemTooltip.requestItemTooltip(item:getId())
+        end
+    else
+        if g_itemTooltip then
+            g_itemTooltip.hideTooltip()
+        end
+    end
+
     if self:isVirtual() or not self:isDraggable() then
         local draggingWidget = g_ui.getDraggingWidget()
         if not draggingWidget or draggingWidget == self then
