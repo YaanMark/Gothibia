@@ -8,7 +8,9 @@ function init()
   ProtocolGame.registerExtendedOpcode(OPCODE_ITEM_TOOLTIP, onReceiveItemTooltip)
 
   tooltipWindow = g_ui.displayUI('itemtooltip.otui')
-  tooltipWindow:hide()
+  if tooltipWindow then
+    tooltipWindow:hide()
+  end
 
   connect(g_game, {
     onGameEnd = onGameEnd

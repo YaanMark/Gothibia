@@ -1,4 +1,4 @@
-ItemTooltipWindow < UIWindow
+UIWindow
   id: itemTooltipWindow
   focusable: false
   phantom: true
