@@ -13,7 +13,7 @@ UIWindow
 
   Label
     id: nameLabel
-    font: verdana-11px-bold
+    font: verdana-11px-monochrome
     color: #ffcc00
     text-auto-resize: true
     text-align: left
@@ -25,7 +25,7 @@ UIWindow
     text-auto-resize: true
     text-align: left
 
-  UIHorizontalSeparator
+  HorizontalSeparator
     id: sep1
     color: #30363d
     margin-top: 2
