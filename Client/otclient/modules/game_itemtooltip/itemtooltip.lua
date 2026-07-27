@@ -100,29 +100,29 @@ function renderTooltip(data)
   local stats = {}
 
   if data.attack and data.attack > 0 then
-    table.insert(stats, string.format("Ataque: %d", data.attack))
+    table.insert(stats, string.format("Attack: %d", data.attack))
   end
   if data.defense and data.defense > 0 then
-    local defText = string.format("Defesa: %d", data.defense)
+    local defText = string.format("Defense: %d", data.defense)
     if data.extraDefense and data.extraDefense ~= 0 then
       defText = defText .. string.format(" (%+d)", data.extraDefense)
     end
     table.insert(stats, defText)
   end
   if data.armor and data.armor > 0 then
-    table.insert(stats, string.format("Armadura: %d", data.armor))
+    table.insert(stats, string.format("Armor: %d", data.armor))
   end
   if data.hitChance and data.hitChance > 0 then
-    table.insert(stats, string.format("Chance de Acerto: %+d%%", data.hitChance))
+    table.insert(stats, string.format("Hit Chance: %+d%%", data.hitChance))
   end
   if data.shootRange and data.shootRange > 1 then
-    table.insert(stats, string.format("Alcance: %d tiles", data.shootRange))
+    table.insert(stats, string.format("Range: %d tiles", data.shootRange))
   end
 
   -- Abilities (Speed, Skills, Stats)
   if data.abilities then
     if data.abilities.speed and data.abilities.speed ~= 0 then
-      table.insert(stats, string.format("Velocidade: %+d", data.abilities.speed))
+      table.insert(stats, string.format("Speed: %+d", data.abilities.speed))
     end
     if data.abilities.skills then
       for skillId, val in pairs(data.abilities.skills) do
@@ -142,13 +142,13 @@ function renderTooltip(data)
   local reqLabel = tooltipWindow:getChildById('reqLabel')
   local reqs = {}
   if data.minReqLevel and data.minReqLevel > 0 then
-    table.insert(reqs, string.format("Nível Mínimo: %d", data.minReqLevel))
+    table.insert(reqs, string.format("Min Level: %d", data.minReqLevel))
   end
   if data.minReqMagicLevel and data.minReqMagicLevel > 0 then
-    table.insert(reqs, string.format("Magic Level Mínimo: %d", data.minReqMagicLevel))
+    table.insert(reqs, string.format("Min Magic Level: %d", data.minReqMagicLevel))
   end
   if data.vocationString and #data.vocationString > 0 then
-    table.insert(reqs, string.format("Vocações: %s", data.vocationString))
+    table.insert(reqs, string.format("Vocations: %s", data.vocationString))
   end
 
   if #reqs > 0 then
@@ -185,13 +185,4 @@ function renderTooltip(data)
   tooltipWindow:setPosition({x = posX, y = posY})
   tooltipWindow:show()
   tooltipWindow:raise()
-
-  local tooltipLines = {}
-  table.insert(tooltipLines, nameText)
-  if #typeText > 0 then table.insert(tooltipLines, typeText) end
-  if #stats > 0 then table.insert(tooltipLines, table.concat(stats, "\n")) end
-  if #reqs > 0 then table.insert(tooltipLines, table.concat(reqs, "\n")) end
-  if data.description and #data.description > 0 then table.insert(tooltipLines, data.description) end
-
-  g_tooltip.display(table.concat(tooltipLines, "\n"))
 end
