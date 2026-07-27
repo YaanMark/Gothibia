@@ -1,0 +1,56 @@
+ItemTooltipWindow < UIWindow
+  id: itemTooltipWindow
+  focusable: false
+  phantom: true
+  background-color: #0d1117f0
+  border: 1 #30363d
+  padding: 8
+  width: 240
+  layout:
+    type: verticalBox
+    fit-children: true
+    spacing: 3
+
+  Label
+    id: nameLabel
+    font: verdana-11px-bold
+    color: #ffcc00
+    text-auto-resize: true
+    text-align: left
+
+  Label
+    id: typeLabel
+    font: verdana-11px-monochrome
+    color: #8b949e
+    text-auto-resize: true
+    text-align: left
+
+  UIHorizontalSeparator
+    id: sep1
+    color: #30363d
+    margin-top: 2
+    margin-bottom: 2
+
+  Label
+    id: statsLabel
+    font: verdana-11px-monochrome
+    color: #e6edf3
+    text-auto-resize: true
+    text-align: left
+    text-wrap: true
+
+  Label
+    id: reqLabel
+    font: verdana-11px-monochrome
+    color: #d2a8ff
+    text-auto-resize: true
+    text-align: left
+    text-wrap: true
+
+  Label
+    id: descLabel
+    font: verdana-11px-monochrome
+    color: #8b949e
+    text-auto-resize: true
+    text-align: left
+    text-wrap: true

@@ -1,0 +1,8 @@
+Module
+  name: game_itemtooltip
+  description: Native Item Tooltip System via Extended Opcode 251
+  author: Gothibia
+  sandboxed: true
+  scripts: [ itemtooltip ]
+  @onLoad: init()
+  @onUnload: terminate()
