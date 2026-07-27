@@ -1,0 +1,9 @@
+Module
+  name: game_admindebug
+  description: "Admin Debug Tools for Tibia Server"
+  author: vini21
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ game_admindebug ]
+  @onLoad: init()
+  @onUnload: terminate()

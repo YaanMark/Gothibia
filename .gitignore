@@ -1,0 +1,54 @@
+# ==========================================
+# Binários e Arquivos de Compilação / Debug
+# ==========================================
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+
+# ==========================================
+# Pastas de Build, Cache e IDEs
+# ==========================================
+build/
+cache/
+vcpkg_installed/
+.vs/
+.vscode/
+.idea/
+bin/
+obj/
+Assets/Assets-Editor-main/
+
+# ==========================================
+# Arquivos de Segurança e Senhas (Sensíveis)
+# ==========================================
+# Ignorar o config.lua real (mantenha o config.lua.dist no Git)
+Server/canary/config.lua
+config.lua
+
+# Chaves privadas RSA / SSL
+*.pem
+key.pem
+Server/canary/key.pem
+
+# ==========================================
+# Logs e Arquivos Temporários
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# ==========================================
+# Arquivos do Sistema Operacional
+# ==========================================
+Thumbs.db
+Desktop.ini
+.DS_Store

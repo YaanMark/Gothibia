@@ -1,0 +1,80 @@
+MiniWindow
+  id: balance
+  max-height: 65
+  width: 180
+  &save: true
+  @onOpen: modules.game_balance.onMiniWindowOpen()
+  @onClose: modules.game_balance.onMiniWindowClose()
+
+  UIWidget
+    id: miniwindowIcon
+    anchors.top: miniwindowHeader.top
+    anchors.left: miniwindowHeader.left
+    margin-top: 2
+    margin-left: 4
+    image-source: /game_balance/images/topbutton_balance
+    image-rect: 0 0 12 12
+    image-smooth: false
+
+  Label
+    id: miniwindowTitle
+    anchors.top: miniwindowHeader.top
+    anchors.left: miniwindowHeader.left
+    anchors.right: miniwindowHeader.right
+    margin-top: 2
+    margin-left: 20
+    margin-right: 50
+    font: verdana-11px-monochrome
+    height: 13
+    !text: tr('Balance')
+    color: #9d9d9dff
+
+  MiniWindowContents
+
+    Label
+      id: lblBag
+      anchors.top: parent.top
+      anchors.left: parent.left
+      margin-top: 6
+      margin-left: 8
+      font: verdana-11px-rounded
+      color: #888888
+      text: Bag:
+      phantom: true
+
+    Label
+      id: goldBag
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 6
+      margin-right: 8
+      font: verdana-11px-rounded
+      color: #eecc44
+      text-align: right
+      text: ...
+      phantom: true
+
+    Label
+      id: lblBank
+      anchors.top: lblBag.bottom
+      anchors.left: parent.left
+      margin-top: 6
+      margin-left: 8
+      font: verdana-11px-rounded
+      color: #888888
+      text: Bank:
+      phantom: true
+
+    Label
+      id: goldBank
+      anchors.top: goldBag.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 6
+      margin-right: 8
+      font: verdana-11px-rounded
+      color: #44ccee
+      text-align: right
+      text: ...
+      phantom: true

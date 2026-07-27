@@ -1,0 +1,10 @@
+Module
+  name: game_balance
+  description: Exibe gold na bag e no banco em tempo real (atualiza a cada 3s)
+  author: vini21
+  sandboxed: true
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ game_balance ]
+  @onLoad: init()
+  @onUnload: terminate()

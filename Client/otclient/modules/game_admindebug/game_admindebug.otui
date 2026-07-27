@@ -1,0 +1,945 @@
+MainWindow
+  id: adminDebugWindow
+  !text: tr('Admin Debug')
+  size: 1460 780
+  @onEscape: modules.game_admindebug.hide()
+
+  Label
+    id: lblMe
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 0
+    margin-left: 0
+    width: 430
+    height: 16
+    text: Para Mim
+    font: verdana-11px-antialised
+    color: #9d9d9d
+    text-align: center
+
+  Label
+    id: lblAdmin
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 0
+    margin-left: 450
+    width: 430
+    height: 16
+    text: Admin
+    font: verdana-11px-antialised
+    color: #9d9d9d
+    text-align: center
+
+  Label
+    id: lblPlayer
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 0
+    margin-left: 900
+    width: 530
+    height: 16
+    text: Para Jogador
+    font: verdana-11px-antialised
+    color: #9d9d9d
+    text-align: center
+
+  Button
+    id: btnAddXp
+    anchors.top: lblMe.bottom
+    anchors.left: parent.left
+    margin-top: 8
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Add XP
+    @onClick: modules.game_admindebug.cmdAddXp()
+
+  TextEdit
+    id: fieldXpAmount
+    anchors.top: lblMe.bottom
+    anchors.left: parent.left
+    margin-top: 8
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 1000000
+    max-length: 15
+
+  Button
+    id: btnAddBoost
+    anchors.top: btnAddXp.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Boost em min
+    @onClick: modules.game_admindebug.cmdAddBoost()
+
+  TextEdit
+    id: fieldBoostMinutes
+    anchors.top: btnAddXp.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 30
+    max-length: 5
+
+  Button
+    id: btnAddBank
+    anchors.top: btnAddBoost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Adicionar Banco
+    @onClick: modules.game_admindebug.cmdAddBank()
+
+  TextEdit
+    id: fieldBankAmount
+    anchors.top: btnAddBoost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 100000
+    max-length: 15
+
+  Button
+    id: btnGoTo
+    anchors.top: btnAddBank.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Ir para Cidade
+    @onClick: modules.game_admindebug.cmdGoTo()
+
+  TextEdit
+    id: fieldCityName
+    anchors.top: btnAddBank.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: Thais
+    max-length: 30
+
+  Button
+    id: btnTpToPlayer
+    anchors.top: btnGoTo.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: TP ate Player
+    @onClick: modules.game_admindebug.cmdTpToPlayer()
+
+  TextEdit
+    id: fieldTpPlayerName
+    anchors.top: btnGoTo.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: Nome do Player
+    max-length: 30
+
+  Button
+    id: btnAddPreyCards
+    anchors.top: btnTpToPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Prey Cards
+    @onClick: modules.game_admindebug.cmdAddPreyCards()
+
+  TextEdit
+    id: fieldPreyAmount
+    anchors.top: btnTpToPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 10
+    max-length: 5
+
+  Button
+    id: btnAddTaskPoints
+    anchors.top: btnAddPreyCards.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Task Points
+    @onClick: modules.game_admindebug.cmdAddTaskPoints()
+
+  TextEdit
+    id: fieldTaskAmount
+    anchors.top: btnAddPreyCards.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 100
+    max-length: 8
+
+  Button
+    id: btnDarItemMe
+    anchors.top: btnAddTaskPoints.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Dar Item
+    @onClick: modules.game_admindebug.cmdDarItemMe()
+
+  TextEdit
+    id: fieldItemIdMe
+    anchors.top: btnAddTaskPoints.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 133
+    height: 28
+    text: 2160
+    max-length: 6
+
+  TextEdit
+    id: fieldItemQtyMe
+    anchors.top: btnAddTaskPoints.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 288
+    width: 135
+    height: 28
+    text: 1
+    max-length: 5
+
+  Button
+    id: btnInvocarMonstro
+    anchors.top: btnDarItemMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Invocar Monstro
+    @onClick: modules.game_admindebug.cmdInvocarMonstro()
+
+  TextEdit
+    id: fieldMonsterName
+    anchors.top: btnDarItemMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 196
+    height: 28
+    text: Rat
+    max-length: 50
+
+  TextEdit
+    id: fieldMonsterQty
+    anchors.top: btnDarItemMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 351
+    width: 72
+    height: 28
+    text: 1
+    max-length: 3
+
+  Button
+    id: btnAddMountMe
+    anchors.top: btnInvocarMonstro.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Add Mount
+    @onClick: modules.game_admindebug.cmdAddMountMe()
+
+  TextEdit
+    id: fieldMountMe
+    anchors.top: btnInvocarMonstro.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: all
+    max-length: 10
+
+  Button
+    id: btnAddSkillMe
+    anchors.top: btnAddMountMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Add Skill
+    @onClick: modules.game_admindebug.cmdAddSkillMe()
+
+  TextEdit
+    id: fieldSkillTypeMe
+    anchors.top: btnAddMountMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 133
+    height: 28
+    text: level
+    max-length: 10
+
+  TextEdit
+    id: fieldSkillAmtMe
+    anchors.top: btnAddMountMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 288
+    width: 135
+    height: 28
+    text: 1
+    max-length: 5
+
+  Button
+    id: btnAddCharmMe
+    anchors.top: btnAddSkillMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Add Charms
+    @onClick: modules.game_admindebug.cmdAddCharmMe()
+
+  TextEdit
+    id: fieldCharmMe
+    anchors.top: btnAddSkillMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: 1000
+    max-length: 10
+
+  Button
+    id: btnGoToHouseMe
+    anchors.top: btnAddCharmMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 143
+    height: 28
+    text: Ir a Casa
+    @onClick: modules.game_admindebug.cmdGoToHouseMe()
+
+  TextEdit
+    id: fieldGoToHouseMe
+    anchors.top: btnAddCharmMe.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 149
+    width: 274
+    height: 28
+    text: meu personagem
+    max-length: 30
+
+  Button
+    id: btnClearXpBoost
+    anchors.top: btnGoToHouseMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 0
+    width: 139
+    height: 28
+    text: Limpar XP Boost
+    @onClick: modules.game_admindebug.cmdClearXpBoost()
+
+  Button
+    id: btnRestoreHpMp
+    anchors.top: btnGoToHouseMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 145
+    width: 139
+    height: 28
+    text: Restaurar HP MP
+    @onClick: modules.game_admindebug.cmdRestoreHpMp()
+
+  Button
+    id: btnClearConditions
+    anchors.top: btnGoToHouseMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 290
+    width: 140
+    height: 28
+    text: Limpar Condicoes
+    @onClick: modules.game_admindebug.cmdClearConditions()
+
+  Button
+    id: btnFullBless
+    anchors.top: btnClearXpBoost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 0
+    width: 139
+    height: 28
+    text: Full Bless
+    @onClick: modules.game_admindebug.cmdFullBless()
+
+  Button
+    id: btnRemoveBless
+    anchors.top: btnClearXpBoost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 145
+    width: 139
+    height: 28
+    text: Remover Bless
+    @onClick: modules.game_admindebug.cmdRemoveBless()
+
+  Button
+    id: btnClearBank
+    anchors.top: btnClearXpBoost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 290
+    width: 140
+    height: 28
+    text: Zerar Banco
+    @onClick: modules.game_admindebug.cmdClearBank()
+
+  Button
+    id: btnSave
+    anchors.top: lblAdmin.bottom
+    anchors.left: parent.left
+    margin-top: 8
+    margin-left: 450
+    width: 430
+    height: 28
+    text: Save Server
+    @onClick: modules.game_admindebug.cmdSave()
+
+  Button
+    id: btnReload
+    anchors.top: btnSave.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: Reload
+    @onClick: modules.game_admindebug.cmdReload()
+
+  TextEdit
+    id: fieldReloadType
+    anchors.top: btnSave.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: scripts
+    max-length: 20
+
+  Button
+    id: btnCloseServer
+    anchors.top: btnReload.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 210
+    height: 28
+    text: Close Server
+    @onClick: modules.game_admindebug.cmdCloseServer()
+
+  Button
+    id: btnOpenServer
+    anchors.top: btnReload.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 670
+    width: 210
+    height: 28
+    text: Open Server
+    @onClick: modules.game_admindebug.cmdOpenServer()
+
+  Button
+    id: btnBroadcast
+    anchors.top: btnCloseServer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: Broadcast
+    @onClick: modules.game_admindebug.cmdBroadcast()
+
+  TextEdit
+    id: fieldBroadcast
+    anchors.top: btnCloseServer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: mensagem
+    max-length: 255
+
+  Button
+    id: btnGhost
+    anchors.top: btnBroadcast.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 430
+    height: 28
+    text: Ghost
+    @onClick: modules.game_admindebug.cmdGhost()
+
+  Button
+    id: btnIpBan
+    anchors.top: btnGhost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: IP Ban
+    @onClick: modules.game_admindebug.cmdIpBan()
+
+  TextEdit
+    id: fieldIpBan
+    anchors.top: btnGhost.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: Nome do Player
+    max-length: 30
+
+  Button
+    id: btnUnban
+    anchors.top: btnIpBan.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: Unban
+    @onClick: modules.game_admindebug.cmdUnban()
+
+  TextEdit
+    id: fieldUnban
+    anchors.top: btnIpBan.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: Nome do Player
+    max-length: 30
+
+  Button
+    id: btnKick
+    anchors.top: btnUnban.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: Kick
+    @onClick: modules.game_admindebug.cmdKick()
+
+  TextEdit
+    id: fieldKick
+    anchors.top: btnUnban.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: Nome do Player
+    max-length: 30
+
+  Button
+    id: btnSpy
+    anchors.top: btnKick.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 450
+    width: 143
+    height: 28
+    text: Spy
+    @onClick: modules.game_admindebug.cmdSpy()
+
+  TextEdit
+    id: fieldSpy
+    anchors.top: btnKick.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 599
+    width: 281
+    height: 28
+    text: Nome do Player
+    max-length: 30
+
+  TextEdit
+    id: fieldTargetPlayer
+    anchors.top: lblPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 8
+    margin-left: 900
+    width: 520
+    height: 28
+    text: Nome do Jogador
+    max-length: 30
+
+  Button
+    id: btnDarItemPlayer
+    anchors.top: fieldTargetPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Dar Item
+    @onClick: modules.game_admindebug.cmdDarItemPlayer()
+
+  TextEdit
+    id: fieldItemIdPlayer
+    anchors.top: fieldTargetPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 185
+    height: 28
+    text: 2160
+    max-length: 6
+
+  TextEdit
+    id: fieldItemQtyPlayer
+    anchors.top: fieldTargetPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1240
+    width: 183
+    height: 28
+    text: 1
+    max-length: 5
+
+  Button
+    id: btnDarXpPlayer
+    anchors.top: btnDarItemPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Dar XP
+    @onClick: modules.game_admindebug.cmdDarXpPlayer()
+
+  TextEdit
+    id: fieldXpPlayer
+    anchors.top: btnDarItemPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 1000000
+    max-length: 15
+
+  Button
+    id: btnBoostPlayer
+    anchors.top: btnDarXpPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Boost em min
+    @onClick: modules.game_admindebug.cmdBoostPlayer()
+
+  TextEdit
+    id: fieldBoostPlayer
+    anchors.top: btnDarXpPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 30
+    max-length: 5
+
+  Button
+    id: btnPreyPlayer
+    anchors.top: btnBoostPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Prey Cards
+    @onClick: modules.game_admindebug.cmdPreyPlayer()
+
+  TextEdit
+    id: fieldPreyPlayer
+    anchors.top: btnBoostPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 10
+    max-length: 5
+
+  Button
+    id: btnTaskPlayer
+    anchors.top: btnPreyPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Task Points
+    @onClick: modules.game_admindebug.cmdTaskPlayer()
+
+  TextEdit
+    id: fieldTaskPlayer
+    anchors.top: btnPreyPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 100
+    max-length: 8
+
+  Button
+    id: btnAddBankPlayer
+    anchors.top: btnTaskPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Adicionar Banco
+    @onClick: modules.game_admindebug.cmdAddBankPlayer()
+
+  TextEdit
+    id: fieldBankPlayer
+    anchors.top: btnTaskPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 100000
+    max-length: 15
+
+  Button
+    id: btnAddMountPlayer
+    anchors.top: btnAddBankPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Add Mount
+    @onClick: modules.game_admindebug.cmdAddMountPlayer()
+
+  TextEdit
+    id: fieldMountPlayer
+    anchors.top: btnAddBankPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: all
+    max-length: 10
+
+  Button
+    id: btnAddSkillPlayer
+    anchors.top: btnAddMountPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Add Skill
+    @onClick: modules.game_admindebug.cmdAddSkillPlayer()
+
+  TextEdit
+    id: fieldSkillTypePlayer
+    anchors.top: btnAddMountPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 185
+    height: 28
+    text: level
+    max-length: 10
+
+  TextEdit
+    id: fieldSkillAmtPlayer
+    anchors.top: btnAddMountPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1240
+    width: 183
+    height: 28
+    text: 1
+    max-length: 5
+
+  Button
+    id: btnAddCharmPlayer
+    anchors.top: btnAddSkillPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Add Charms
+    @onClick: modules.game_admindebug.cmdAddCharmPlayer()
+
+  TextEdit
+    id: fieldCharmPlayer
+    anchors.top: btnAddSkillPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: 1000
+    max-length: 10
+
+  Button
+    id: btnGoToHousePlayer
+    anchors.top: btnAddCharmPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 143
+    height: 28
+    text: Ir a Casa
+    @onClick: modules.game_admindebug.cmdGoToHousePlayer()
+
+  TextEdit
+    id: fieldGoToHousePlayer
+    anchors.top: btnAddCharmPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1049
+    width: 374
+    height: 28
+    text: Nome do Jogador
+    max-length: 30
+
+  Button
+    id: btnTpToMe
+    anchors.top: btnGoToHousePlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 520
+    height: 28
+    text: TP para Mim
+    @onClick: modules.game_admindebug.cmdTpToMe()
+
+  Button
+    id: btnClearXpBoostPlayer
+    anchors.top: btnTpToMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 900
+    width: 170
+    height: 28
+    text: Limpar XP Boost
+    @onClick: modules.game_admindebug.cmdClearXpBoostPlayer()
+
+  Button
+    id: btnRestoreHpMpPlayer
+    anchors.top: btnTpToMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 1075
+    width: 170
+    height: 28
+    text: Restaurar HP MP
+    @onClick: modules.game_admindebug.cmdRestoreHpMpPlayer()
+
+  Button
+    id: btnClearConditionsPlayer
+    anchors.top: btnTpToMe.bottom
+    anchors.left: parent.left
+    margin-top: 10
+    margin-left: 1250
+    width: 170
+    height: 28
+    text: Limpar Condicoes
+    @onClick: modules.game_admindebug.cmdClearConditionsPlayer()
+
+  Button
+    id: btnFullBlessPlayer
+    anchors.top: btnClearXpBoostPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 900
+    width: 170
+    height: 28
+    text: Full Bless
+    @onClick: modules.game_admindebug.cmdFullBlessPlayer()
+
+  Button
+    id: btnRemoveBlessPlayer
+    anchors.top: btnClearXpBoostPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1075
+    width: 170
+    height: 28
+    text: Remover Bless
+    @onClick: modules.game_admindebug.cmdRemoveBlessPlayer()
+
+  Button
+    id: btnClearBankPlayer
+    anchors.top: btnClearXpBoostPlayer.bottom
+    anchors.left: parent.left
+    margin-top: 5
+    margin-left: 1250
+    width: 170
+    height: 28
+    text: Zerar Banco
+    @onClick: modules.game_admindebug.cmdClearBankPlayer()
+
+  Button
+    id: btnClose
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    margin-left: 664
+    width: 100
+    height: 28
+    text: Fechar
+    @onClick: modules.game_admindebug.hide()
