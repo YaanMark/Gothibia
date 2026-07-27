@@ -36,6 +36,7 @@ end
 
 function requestItemTooltip(itemId)
   if not g_game.isOnline() then return end
+  g_logger.info("[ItemTooltip] Requesting tooltip for item: " .. tostring(itemId))
   local protocol = g_game.getProtocolGame()
   if protocol then
     protocol:sendExtendedOpcode(OPCODE_ITEM_TOOLTIP, tostring(itemId))
@@ -47,15 +48,18 @@ function hideTooltip()
   if tooltipWindow then
     tooltipWindow:hide()
   end
+  g_tooltip.hide()
   currentHoveredItem = nil
 end
 g_itemTooltip.hideTooltip = hideTooltip
 
 function onReceiveItemTooltip(protocol, opcode, buffer)
+  g_logger.info("[ItemTooltip] Received opcode 251 payload: " .. tostring(buffer))
   if not buffer or #buffer == 0 then return end
 
   local success, data = pcall(function() return json.decode(buffer) end)
   if not success or not data or data.valid == false then
+    g_logger.warn("[ItemTooltip] Failed to decode JSON or invalid item data")
     return
   end
 
@@ -180,4 +184,13 @@ function renderTooltip(data)
   tooltipWindow:setPosition({x = posX, y = posY})
   tooltipWindow:show()
   tooltipWindow:raise()
+
+  local tooltipLines = {}
+  table.insert(tooltipLines, nameText)
+  if #typeText > 0 then table.insert(tooltipLines, typeText) end
+  if #stats > 0 then table.insert(tooltipLines, table.concat(stats, "\n")) end
+  if #reqs > 0 then table.insert(tooltipLines, table.concat(reqs, "\n")) end
+  if data.description and #data.description > 0 then table.insert(tooltipLines, data.description) end
+
+  g_tooltip.display(table.concat(tooltipLines, "\n"))
 end
