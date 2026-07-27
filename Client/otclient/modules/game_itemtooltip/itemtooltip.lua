@@ -4,27 +4,6 @@ local tooltipWindow = nil
 local OPCODE_ITEM_TOOLTIP = 251
 local currentHoveredItem = nil
 
-local function onWidgetHoverChange(widget, hovered)
-  if not g_game.isOnline() then return end
-
-  if hovered then
-    local item = nil
-    if widget.getItem then
-      item = widget:getItem()
-    end
-
-    if item and item.getId then
-      local itemId = item:getId()
-      if itemId and itemId > 0 then
-        currentHoveredItem = item
-        requestItemTooltip(itemId)
-      end
-    end
-  else
-    hideTooltip()
-  end
-end
-
 function init()
   ProtocolGame.registerExtendedOpcode(OPCODE_ITEM_TOOLTIP, onReceiveItemTooltip)
 
@@ -33,10 +12,6 @@ function init()
     tooltipWindow:hide()
   end
 
-  connect(UIWidget, {
-    onHoverChange = onWidgetHoverChange
-  })
-
   connect(g_game, {
     onGameEnd = onGameEnd
   })
@@ -44,10 +19,6 @@ end
 
 function terminate()
   ProtocolGame.unregisterExtendedOpcode(OPCODE_ITEM_TOOLTIP)
-
-  disconnect(UIWidget, {
-    onHoverChange = onWidgetHoverChange
-  })
 
   disconnect(g_game, {
     onGameEnd = onGameEnd
