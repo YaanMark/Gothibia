@@ -35,6 +35,7 @@
 #include "game/modal_window/modal_window.hpp"
 #include "game/tooltip/tooltip.hpp"
 #include "game/scheduling/dispatcher.hpp"
+#include "items/item.hpp"
 #include "io/functions/iologindata_load_player.hpp"
 #include "io/io_bosstiary.hpp"
 #include "io/iobestiary.hpp"
@@ -10581,8 +10582,8 @@ void ProtocolGame::parseExtendedOpcode(NetworkMessage &msg) {
 			}
 		}
 
-		if (g_items().hasItemType(appearanceId)) {
-			const ItemType &item = g_items().getItemType(appearanceId);
+		if (Item::items.hasItemType(appearanceId)) {
+			const ItemType &item = Item::items.getItemType(appearanceId);
 			std::string jsonResponse = TooltipSerializer::serialize(item);
 			sendExtendedOpcode(251, jsonResponse);
 		} else {
