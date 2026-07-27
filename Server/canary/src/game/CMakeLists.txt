@@ -18,5 +18,7 @@ target_sources(
             scheduling/monster_compute_service.hpp
             scheduling/task.cpp
             scheduling/save_manager.cpp
+            tooltip/tooltip.cpp
+            tooltip/tooltip.hpp
             zones/zone.cpp
 )

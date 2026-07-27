@@ -33,6 +33,7 @@
 #include "enums/player_icons.hpp"
 #include "game/game.hpp"
 #include "game/modal_window/modal_window.hpp"
+#include "game/tooltip/tooltip.hpp"
 #include "game/scheduling/dispatcher.hpp"
 #include "io/functions/iologindata_load_player.hpp"
 #include "io/io_bosstiary.hpp"
@@ -10555,9 +10556,40 @@ void ProtocolGame::AddShopItem(NetworkMessage &msg, const ShopBlock &shopBlock) 
 	msg.add<uint32_t>(shopBlock.itemSellPrice == 4294967295 ? 0 : shopBlock.itemSellPrice);
 }
 
+void ProtocolGame::sendExtendedOpcode(uint8_t opcode, const std::string &buffer) {
+	NetworkMessage msg;
+	msg.addByte(0x32);
+	msg.addByte(opcode);
+	msg.addString(buffer);
+	writeToOutputBuffer(msg);
+}
+
 void ProtocolGame::parseExtendedOpcode(NetworkMessage &msg) {
 	uint8_t opcode = msg.getByte();
 	const std::string &buffer = msg.getString();
+
+	// Native Item Tooltip Handling (Opcode 251)
+	if (opcode == 251) {
+		uint16_t appearanceId = 0;
+		if (!buffer.empty()) {
+			try {
+				appearanceId = static_cast<uint16_t>(std::stoul(buffer));
+			} catch (...) {
+				if (buffer.size() >= sizeof(uint16_t)) {
+					std::memcpy(&appearanceId, buffer.data(), sizeof(uint16_t));
+				}
+			}
+		}
+
+		if (g_items().hasItemType(appearanceId)) {
+			const ItemType &item = g_items().getItemType(appearanceId);
+			std::string jsonResponse = TooltipSerializer::serialize(item);
+			sendExtendedOpcode(251, jsonResponse);
+		} else {
+			sendExtendedOpcode(251, "{\"valid\":false}");
+		}
+		return;
+	}
 
 	// process additional opcodes via lua script event
 	g_game().parsePlayerExtendedOpcode(player->getID(), opcode, buffer);

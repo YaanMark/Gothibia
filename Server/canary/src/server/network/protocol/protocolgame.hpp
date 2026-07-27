@@ -547,6 +547,7 @@ private:
 
 	// otclient
 	void parseExtendedOpcode(NetworkMessage &msg);
+	void sendExtendedOpcode(uint8_t opcode, const std::string &buffer);
 
 	// OTCv8
 	void sendFeatures();
