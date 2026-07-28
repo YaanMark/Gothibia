@@ -235,12 +235,8 @@ end
 -- =============================================*/
 
 function TutorialController:onTutorialHint(id)
-    if id and id == tutorialStep.chooseVocation then
-        self:setTutorialStep(id)
-        self:show()
-    else
-        print("[game_tutorial] unexpected tutorial hint: " .. tostring(id))
-    end
+    -- Disabled automatic vocation selection modal window
+    return
 end
 
 -- /*=============================================
