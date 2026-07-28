@@ -7,7 +7,11 @@ function init()
     panel = g_ui.displayUI('game_admindebug')
     panel:hide()
 
-    connect(g_game, { onGameStart = onGameStart, onGameEnd = onGameEnd })
+    connect(g_game, {
+        onGameStart = onGameStart,
+        onGameEnd = onGameEnd,
+        onGMActions = updateAdminButton
+    })
     ProtocolGame.registerExtendedJSONOpcode(OPCODE, onReceive)
 
     if modules.game_mainpanel then
@@ -19,28 +23,57 @@ function init()
             false,
             99
         )
+        if adminButton then
+            adminButton:setVisible(false)
+        end
     end
 
     if g_game.isOnline() then onGameStart() end
 end
 
 function terminate()
-    disconnect(g_game, { onGameStart = onGameStart, onGameEnd = onGameEnd })
+    disconnect(g_game, {
+        onGameStart = onGameStart,
+        onGameEnd = onGameEnd,
+        onGMActions = updateAdminButton
+    })
     ProtocolGame.unregisterExtendedJSONOpcode(OPCODE, onReceive)
     if adminButton then adminButton:destroy(); adminButton = nil end
     if panel then panel:destroy(); panel = nil end
 end
 
+function updateAdminButton()
+    if not adminButton then return end
+    local actions = g_game.getGMActions()
+    local hasAccess = actions and next(actions) ~= nil
+    adminButton:setVisible(hasAccess)
+    if not hasAccess and panel and panel:isVisible() then
+        hide()
+    end
+end
+
 function onGameStart()
+    updateAdminButton()
+    sendCmd('checkAccess')
 end
 
 function onGameEnd()
     if panel then panel:hide() end
-    if adminButton then adminButton:setOn(false) end
+    if adminButton then
+        adminButton:setOn(false)
+        adminButton:setVisible(false)
+    end
 end
 
 function onReceive(protocol, opcode, data)
-    -- reservado para respostas futuras do servidor
+    if type(data) == "table" and data.cmd == "accessResult" then
+        if adminButton then
+            adminButton:setVisible(data.allowed == true)
+        end
+        if not data.allowed and panel and panel:isVisible() then
+            hide()
+        end
+    end
 end
 
 function show()
