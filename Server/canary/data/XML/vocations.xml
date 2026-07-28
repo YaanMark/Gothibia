@@ -147,7 +147,7 @@
 		<gem quality="1" name="spiritualist gem" />
 		<gem quality="2" name="greater spiritualist gem" />
 	</vocation>
-	<vocation id="11" clientid="16" baseid="11" name="Hemomante" description="a hemomante" magicshield="1" gaincap="15" gainhp="10" gainmana="25" gainhpticks="6000" gainhpamount="1" gainmanaticks="2000" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="11">
+	<vocation id="11" clientid="11" baseid="11" name="Hemomante" description="a hemomante" magicshield="1" gaincap="15" gainhp="10" gainmana="25" gainhpticks="6000" gainhpamount="1" gainmanaticks="2000" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="100" gainsoulticks="120000" fromvoc="11">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.26" primaryShield="2.0" secondaryShield="1.2" />
 		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
@@ -159,7 +159,7 @@
 		<skill id="5" multiplier="1.5" />
 		<skill id="6" multiplier="1.1" />
 	</vocation>
-	<vocation id="12" clientid="17" baseid="11" name="Arch Hemomante" description="an arch hemomante" magicshield="1" gaincap="15" gainhp="10" gainmana="25" gainhpticks="4000" gainhpamount="1" gainmanaticks="1500" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="200" gainsoulticks="15000" fromvoc="11">
+	<vocation id="12" clientid="12" baseid="11" name="Arch Hemomante" description="an arch hemomante" magicshield="1" gaincap="15" gainhp="10" gainmana="25" gainhpticks="4000" gainhpamount="1" gainmanaticks="1500" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="200" gainsoulticks="15000" fromvoc="11">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.26" primaryShield="2.0" secondaryShield="1.2" />
 		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
