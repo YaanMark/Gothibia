@@ -99,6 +99,24 @@ local config = {
 			{ 266, 10 }, -- health potion
 		},
 	},
+
+	[VOCATION.ID.HEMOMANTE] = {
+		items = {
+			{ 3059, 1 }, -- spellbook
+			{ 3074, 1 }, -- wand of vortex
+			{ 7991, 1 }, -- magician's robe
+			{ 7992, 1 }, -- mage hat
+			{ 3362, 1 }, -- studded legs
+			{ 3552, 1 }, -- leather boots
+			{ 3572, 1 }, -- scarf
+		},
+
+		container = {
+			{ 3003, 1 }, -- rope
+			{ 5710, 1 }, -- light shovel
+			{ 268, 10 }, -- mana potion
+		},
+	},
 }
 
 local sendFirstItems = CreatureEvent("SendFirstItems")

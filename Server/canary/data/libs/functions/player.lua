@@ -185,8 +185,12 @@ function Player.isPaladin(self)
 	return table.contains({ VOCATION.ID.PALADIN, VOCATION.ID.ROYAL_PALADIN }, self:getVocation():getId())
 end
 
+function Player.isHemomante(self)
+	return table.contains({ VOCATION.ID.HEMOMANTE, VOCATION.ID.ARCH_HEMOMANTE }, self:getVocation():getId())
+end
+
 function Player.isMage(self)
-	return table.contains({ VOCATION.ID.SORCERER, VOCATION.ID.MASTER_SORCERER, VOCATION.ID.DRUID, VOCATION.ID.ELDER_DRUID }, self:getVocation():getId())
+	return table.contains({ VOCATION.ID.SORCERER, VOCATION.ID.MASTER_SORCERER, VOCATION.ID.DRUID, VOCATION.ID.ELDER_DRUID, VOCATION.ID.HEMOMANTE, VOCATION.ID.ARCH_HEMOMANTE }, self:getVocation():getId())
 end
 
 local ACCOUNT_STORAGES = {}

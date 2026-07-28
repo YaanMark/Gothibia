@@ -11,6 +11,8 @@ VOCATION = {
 		ELITE_KNIGHT = 8,
 		MONK = 9,
 		EXALTED_MONK = 10,
+		HEMOMANTE = 11,
+		ARCH_HEMOMANTE = 12,
 	},
 	CLIENT_ID = {
 		NONE = 0,
@@ -24,6 +26,8 @@ VOCATION = {
 		MASTER_SORCERER = 13,
 		ELDER_DRUID = 14,
 		EXALTED_MONK = 15,
+		HEMOMANTE = 16,
+		ARCH_HEMOMANTE = 17,
 	},
 	BASE_ID = {
 		NONE = 0,
@@ -32,6 +36,7 @@ VOCATION = {
 		PALADIN = 3,
 		KNIGHT = 4,
 		MONK = 9,
+		HEMOMANTE = 11,
 	},
 }
 
