@@ -27,6 +27,8 @@ VocationsServer = {
     EliteKnight = 8,
     Monk = 9,
     ExaltedMonk = 10,
+    Hemomante = 11,
+    ArchHemomante = 12,
 }
 
 VocationsClient = {
@@ -42,6 +44,8 @@ VocationsClient = {
     MasterSorcerer = 13,
     ElderDruid = 14,
     ExaltedMonk = 15,
+    Hemomante = 16,
+    ArchHemomante = 17,
 }
 -- @}
 

@@ -610,6 +610,8 @@ vocationNamesByClientId = {
     [13] = "Master Sorcerer",
     [14] = "Elder Druid",
     [15] = "Exalted Monk",
+    [16] = "Hemomante",
+    [17] = "Arch Hemomante",
 }
 
 function Player:isPartyLeader()

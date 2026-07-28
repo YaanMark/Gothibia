@@ -152,6 +152,8 @@ function getVocationId(name)
     return 14 -- Elder Druid
   elseif string.find(name:lower(), "monk") then
     return 15 -- Elder Monk
+  elseif string.find(name:lower(), "hemomante") then
+    return 16 -- Hemomante
   end
 
   return 0
