@@ -59,6 +59,7 @@ Module
     - game_wheel
     - game_proficiency
     - game_itemtooltip
+    - game_notification
 
   @onLoad: init()
   @onUnload: terminate()
