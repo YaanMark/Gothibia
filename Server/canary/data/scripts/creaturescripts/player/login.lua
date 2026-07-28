@@ -167,6 +167,13 @@ function playerLoginGlobal.onLogin(player)
 	player:registerEvent("DropLoot")
 	player:registerEvent("BossParticipation")
 	player:registerEvent("UpdatePlayerOnAdvancedLevel")
+	player:registerEvent("ExtendedOpcode")
+	player:registerEvent("AdminDebugOpcode")
+
+	if hasAdminAccess then
+		local isGM = hasAdminAccess(player)
+		player:sendExtendedOpcode(192, json.encode({ cmd = "accessResult", allowed = isGM }))
+	end
 
 	-- Load the server-side quest tracker after the client has finished entering the game.
 	-- The tracker is persisted in player KV and no longer depends only on client cache.

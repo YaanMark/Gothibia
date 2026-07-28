@@ -45,10 +45,8 @@ end
 function updateAdminButton()
     if not adminButton then return end
     local actions = g_game.getGMActions()
-    local hasAccess = actions and next(actions) ~= nil
-    adminButton:setVisible(hasAccess)
-    if not hasAccess and panel and panel:isVisible() then
-        hide()
+    if actions and next(actions) ~= nil then
+        adminButton:setVisible(true)
     end
 end
 
