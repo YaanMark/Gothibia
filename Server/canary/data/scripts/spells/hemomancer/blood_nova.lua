@@ -2,7 +2,7 @@ local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_DEATHDAMAGE)
 combat:setParameter(COMBAT_PARAM_EFFECT, 63) -- effect 63: MORTAREA
 
-local area = createCombatArea(AREA_SQUARE3X3)
+local area = createCombatArea(AREA_CIRCLE3X3)
 combat:setArea(area)
 
 function onGetFormulaValues(player, level, maglevel)
