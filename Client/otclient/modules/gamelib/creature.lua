@@ -39,13 +39,13 @@ VocationsClient = {
     Druid = 4,
     Monk = 5,
 
-    Hemomante = 11,
-    ArchHemomante = 12,
     EliteKnight = 11,
     RoyalPaladin = 12,
     MasterSorcerer = 13,
     ElderDruid = 14,
     ExaltedMonk = 15,
+    Hemomante = 16,
+    ArchHemomante = 17,
 }
 -- @}
 
