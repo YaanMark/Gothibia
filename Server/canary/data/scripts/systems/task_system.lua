@@ -1544,6 +1544,18 @@ end
 
 table.insert(events, globalevent)
 
+local KillEvent = CreatureEvent("TaskSystemKill")
+
+function KillEvent.onKill(creature, target, lastHit)
+  if not target or target:isPlayer() or target:getMaster() then
+    return true
+  end
+  if creature and creature:isPlayer() then
+    TaskSystem.onKill(creature, target)
+  end
+  return true
+end
+
 local DeathEvent = CreatureEvent("TaskSystemDeath")
 
 function DeathEvent.onDeath(creature, corpse, killer, mostDamageKiller, lastHitUnjustified, mostDamageUnjustified)
@@ -1592,6 +1604,7 @@ local LoginEvent = CreatureEvent("TaskLogin")
 
 function LoginEvent.onLogin(player)
   player:registerEvent("TaskExtended")
+  player:registerEvent("TaskSystemKill")
   player:registerEvent("TaskSystemDeath")
   
   -- Clear OUTDATED tasks from previous daily
@@ -1605,5 +1618,7 @@ LoginEvent:type("login")
 LoginEvent:register()
 ExtendedEvent:type("extendedopcode")
 ExtendedEvent:register()
+KillEvent:type("kill")
+KillEvent:register()
 DeathEvent:type("death")
 DeathEvent:register()
