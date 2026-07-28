@@ -257,6 +257,32 @@ local playerFunctions = {
 			return player:addPremiumDays(target)
 		end,
 	},
+	["vocation"] = {
+		isActive = true,
+		targetFunction = function(player, target)
+			local vocId = tonumber(target)
+			if not vocId then
+				local voc = Vocation(target)
+				if voc then vocId = voc:getId() end
+			end
+			if not vocId then return false end
+			player:setVocation(vocId)
+			return true
+		end,
+	},
+	["voc"] = {
+		isActive = true,
+		targetFunction = function(player, target)
+			local vocId = tonumber(target)
+			if not vocId then
+				local voc = Vocation(target)
+				if voc then vocId = voc:getId() end
+			end
+			if not vocId then return false end
+			player:setVocation(vocId)
+			return true
+		end,
+	},
 }
 
 local attributes = TalkAction("/attr")
