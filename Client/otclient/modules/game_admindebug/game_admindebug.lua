@@ -3,6 +3,18 @@ local adminButton = nil
 
 local OPCODE = 192
 
+-- Envia comando ao servidor via opcode 192
+function sendCmd(cmd, extra)
+    if not g_game.isOnline() then return end
+    local protocol = g_game.getProtocolGame()
+    if not protocol then return end
+    local payload = { cmd = cmd }
+    if extra then
+        for k, v in pairs(extra) do payload[k] = v end
+    end
+    protocol:sendExtendedJSONOpcode(OPCODE, payload)
+end
+
 function init()
     panel = g_ui.displayUI('game_admindebug')
     panel:hide()
@@ -92,17 +104,7 @@ function togglePanel()
     end
 end
 
--- Envia comando ao servidor via opcode 192
-local function sendCmd(cmd, extra)
-    if not g_game.isOnline() then return end
-    local protocol = g_game.getProtocolGame()
-    if not protocol then return end
-    local payload = { cmd = cmd }
-    if extra then
-        for k, v in pairs(extra) do payload[k] = v end
-    end
-    protocol:sendExtendedJSONOpcode(OPCODE, payload)
-end
+
 
 local function getField(id)
     if not panel then return nil end
