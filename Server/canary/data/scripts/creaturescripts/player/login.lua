@@ -170,6 +170,9 @@ function playerLoginGlobal.onLogin(player)
 	player:registerEvent("ExtendedOpcode")
 	player:registerEvent("AdminDebugOpcode")
 
+	-- Desativa o sistema de fome: alimenta o jogador permanentemente
+	player:feed(24 * 3600 * 365 * 10)
+
 	if hasAdminAccess then
 		local isGM = hasAdminAccess(player)
 		player:sendExtendedOpcode(192, json.encode({ cmd = "accessResult", allowed = isGM }))

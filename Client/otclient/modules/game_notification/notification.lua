@@ -189,21 +189,7 @@ function periodicChecks()
         lastLowHpNotif = 0
     end
 
-    -- 3) Fome (regenerationTime <= 0) - a cada 60s
-    local regenTime = player:getRegenerationTime()
-    if regenTime ~= nil and regenTime <= 0 then
-        if now - lastHungryNotif >= 60 then
-            lastHungryNotif = now
-            show({
-                title   = "Fome!",
-                message = "Voce esta com fome, coma algo!",
-                color   = "#FF6B6B",
-                duration = 3000,
-            })
-        end
-    else
-        lastHungryNotif = 0
-    end
+
 
     -- 4) Peso (freeCapacity <= 50) - a cada 60s
     local freeCap = player:getFreeCapacity()
