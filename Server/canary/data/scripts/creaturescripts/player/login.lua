@@ -33,6 +33,22 @@ function playerLoginGlobal.onLogin(player)
 		player:setVocation(vocation:getDemotion())
 	end
 
+	-- Auto learn Hemomancer spells
+	local vocId = player:getVocation():getId()
+	if vocId == VOCATION.ID.HEMOMANTE or vocId == VOCATION.ID.ARCH_HEMOMANTE then
+		local spellsToLearn = {
+			"Sanguine Bolt",
+			"Blood Transfusion",
+			"Vampiric Touch",
+			"Blood Nova",
+			"Sanguine Armor",
+			"Crimson Harvest",
+		}
+		for _, spellName in ipairs(spellsToLearn) do
+			player:learnSpell(spellName)
+		end
+	end
+
 	-- Boosted
 	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted creature: %s.", Game.getBoostedCreature()))
 	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted boss: %s.", Game.getBoostedBoss()))
