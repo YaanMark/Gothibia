@@ -241,6 +241,12 @@ SpellInfo = {
         ['Spiritual Outburst'] = { id = 295, name = 'Spiritual Outburst', words = 'exori gran mas nia', type = 'Instant', level = 300, mana = 425, soul = 0, maglevel = 0, icon = '', clientId = 183, group = { [1] = 2000 }, needTarget = false, parameter = false, range = -1, exhaustion = 60000, premium = true, vocations = {9, 10}, special = false, source = 0, },
         ['Mass Spirit Mend'] = { id = 296, name = 'Mass Spirit Mend', words = 'exura mas nia', type = 'Instant', level = 150, mana = 250, soul = 0, maglevel = 0, icon = '', clientId = 184, group = { [2] = 2000 }, needTarget = false, parameter = false, range = -1, exhaustion = 8000, premium = true, vocations = {9, 10}, special = false, source = 0, },
         ['Restore Balance'] = { id = 297, name = 'Restore Balance', words = 'exura tio sio', type = 'Instant', level = 18, mana = 120, soul = 0, maglevel = 0, icon = '', clientId = 185, group = { [2] = 1000 }, needTarget = true, parameter = true, range = -1, exhaustion = 2000, premium = true, vocations = {9, 10}, special = false, source = 0, },
+        ['Sanguine Bolt'] = { id = 300, name = 'Sanguine Bolt', words = 'exori sanguis', type = 'Instant', level = 12, mana = 20, soul = 0, maglevel = 0, icon = '', clientId = 112, group = { [1] = 2000 }, needTarget = true, parameter = false, range = 5, exhaustion = 2000, premium = false, vocations = {11, 12}, special = false, source = 0 },
+        ['Blood Transfusion'] = { id = 301, name = 'Blood Transfusion', words = 'exura sanguis', type = 'Instant', level = 20, mana = 45, soul = 0, maglevel = 0, icon = '', clientId = 5, group = { [2] = 1000 }, needTarget = false, parameter = false, range = -1, exhaustion = 1000, premium = false, vocations = {11, 12}, special = false, source = 0 },
+        ['Vampiric Touch'] = { id = 302, name = 'Vampiric Touch', words = 'exori vita sanguis', type = 'Instant', level = 35, mana = 85, soul = 0, maglevel = 0, icon = '', clientId = 6, group = { [1] = 2000 }, needTarget = true, parameter = false, range = 4, exhaustion = 2000, premium = false, vocations = {11, 12}, special = false, source = 0 },
+        ['Blood Nova'] = { id = 303, name = 'Blood Nova', words = 'exori gran sanguis', type = 'Instant', level = 50, mana = 140, soul = 0, maglevel = 0, icon = '', clientId = 48, group = { [1] = 2000 }, needTarget = false, parameter = false, range = -1, exhaustion = 4000, premium = false, vocations = {11, 12}, special = false, source = 0 },
+        ['Sanguine Armor'] = { id = 304, name = 'Sanguine Armor', words = 'exeta sanguis', type = 'Instant', level = 60, mana = 180, soul = 0, maglevel = 0, icon = '', clientId = 100, group = { [3] = 2000 }, needTarget = false, parameter = false, range = -1, exhaustion = 2000, premium = false, vocations = {11, 12}, special = false, source = 0 },
+        ['Crimson Harvest'] = { id = 305, name = 'Crimson Harvest', words = 'exevo gran mas sanguis', type = 'Instant', level = 80, mana = 400, soul = 0, maglevel = 0, icon = '', clientId = 48, group = { [1] = 2000 }, needTarget = false, parameter = false, range = -1, exhaustion = 40000, premium = true, vocations = {11, 12}, special = false, source = 0 },
     }
 }
 
@@ -255,7 +261,9 @@ VocationNames = {
     [7] = 'Royal Paladin',
     [8] = 'Elite Knight',
     [9] = 'Monk',
-    [10] = 'Exalted Monk'
+    [10] = 'Exalted Monk',
+    [11] = 'Hemomante',
+    [12] = 'Arch Hemomante'
 }
 
 SpellGroups = {

@@ -20,6 +20,7 @@ vocationBoxDruid = nil
 vocationBoxPaladin = nil
 vocationBoxKnight = nil
 vocationBoxMonk = nil
+vocationBoxHemomante = nil
 
 groupBoxAny = nil
 groupBoxAttack = nil
@@ -45,6 +46,7 @@ FILTER_VOCATION_DRUID = 2
 FILTER_VOCATION_PALADIN = 3
 FILTER_VOCATION_KNIGHT = 4
 FILTER_VOCATION_MONK = 5
+FILTER_VOCATION_HEMOMANTE = 6
 
 FILTER_GROUP_ANY = 0
 FILTER_GROUP_ATTACK = 1
@@ -124,6 +126,7 @@ function init()
     vocationBoxPaladin = spelllistWindow:getChildById('vocationBoxPaladin')
     vocationBoxKnight = spelllistWindow:getChildById('vocationBoxKnight')
     vocationBoxMonk = spelllistWindow:getChildById('vocationBoxMonk')
+    vocationBoxHemomante = spelllistWindow:getChildById('vocationBoxHemomante')
 
     groupBoxAny = spelllistWindow:getChildById('groupBoxAny')
     groupBoxAttack = spelllistWindow:getChildById('groupBoxAttack')
@@ -141,6 +144,7 @@ function init()
     vocationRadioGroup:addWidget(vocationBoxPaladin)
     vocationRadioGroup:addWidget(vocationBoxKnight)
     vocationRadioGroup:addWidget(vocationBoxMonk)
+    vocationRadioGroup:addWidget(vocationBoxHemomante)
 
     groupRadioGroup = UIRadioGroup.create()
     groupRadioGroup:addWidget(groupBoxAny)
@@ -263,6 +267,9 @@ local function vocationMatches(vocations, filterId)
     if filterId == FILTER_VOCATION_MONK then
         return table.find(vocations, VocationsServer.Monk) or table.find(vocations, VocationsServer.ExaltedMonk)
     end
+    if filterId == FILTER_VOCATION_HEMOMANTE then
+        return table.find(vocations, VocationsServer.Hemomante) or table.find(vocations, VocationsServer.ArchHemomante)
+    end
     return table.find(vocations, filterId) or table.find(vocations, filterId + 4)
 end
 
@@ -354,6 +361,8 @@ function selectDefaultVocation()
         widget = vocationBoxDruid
     elseif vocation == VocationsClient.Monk or vocation == VocationsClient.ExaltedMonk then
         widget = vocationBoxMonk
+    elseif vocation == VocationsClient.Hemomante or vocation == VocationsClient.ArchHemomante then
+        widget = vocationBoxHemomante
     end
     vocationRadioGroup:selectWidget(widget)
 end
@@ -386,6 +395,8 @@ function toggleFilter(widget, selectedWidget)
             filters.vocationId = FILTER_VOCATION_KNIGHT
         elseif boxId == 'vocationBoxMonk' then
             filters.vocationId = FILTER_VOCATION_MONK
+        elseif boxId == 'vocationBoxHemomante' then
+            filters.vocationId = FILTER_VOCATION_HEMOMANTE
         end
     elseif widget == groupRadioGroup then
         local boxId = selectedWidget:getId()
