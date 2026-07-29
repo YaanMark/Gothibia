@@ -7039,7 +7039,7 @@
 			<attribute key="toDamage" value="53"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7057,7 +7057,7 @@
 			<attribute key="toDamage" value="18"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7075,7 +7075,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7097,7 +7097,7 @@
 			<attribute key="toDamage" value="37"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7115,7 +7115,7 @@
 			<attribute key="toDamage" value="25"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7132,7 +7132,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7149,7 +7149,7 @@
 			<attribute key="toDamage" value="37"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7166,7 +7166,7 @@
 			<attribute key="toDamage" value="53"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7183,7 +7183,7 @@
 			<attribute key="toDamage" value="18"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -7205,7 +7205,7 @@
 			<attribute key="toDamage" value="25"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -21632,7 +21632,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="65"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8038" article="a" name="robe of the ice queen">
@@ -21644,7 +21644,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="75"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8039" article="a" name="dragon robe">
@@ -21657,7 +21657,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="75"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8040" article="a" name="velvet mantle">
@@ -21670,7 +21670,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="75"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8041" article="a" name="greenwood coat">
@@ -21682,7 +21682,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="75"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8042" article="a" name="spirit cloak">
@@ -21917,7 +21917,7 @@
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="100"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="8063" article="a" name="paladin armor">
@@ -22126,7 +22126,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -22149,7 +22149,7 @@
 			<attribute key="toDamage" value="37"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -22167,7 +22167,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -22206,7 +22206,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -22228,7 +22228,7 @@
 			<attribute key="toDamage" value="37"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -22250,7 +22250,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -30514,7 +30514,7 @@
 			<attribute key="toDamage" value="62"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -30826,7 +30826,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -30893,7 +30893,7 @@
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -34033,7 +34033,7 @@
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -34251,7 +34251,7 @@
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -34284,7 +34284,7 @@
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -34303,7 +34303,7 @@
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -42285,7 +42285,7 @@
 			<attribute key="toDamage" value="8"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -42303,7 +42303,7 @@
 			<attribute key="toDamage" value="8"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -44338,7 +44338,7 @@ Awarded by TibiaMisterios.com.br"/>
 			<attribute key="toDamage" value="74"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -45409,7 +45409,7 @@ Awarded by TibiaMisterios.com.br"/>
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -45429,7 +45429,7 @@ Awarded by TibiaMisterios.com.br"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -49015,7 +49015,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="100"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -51861,7 +51861,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -51884,7 +51884,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -54127,7 +54127,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="101"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -54152,7 +54152,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="102"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -57417,7 +57417,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="100"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -57442,7 +57442,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -59076,7 +59076,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="230"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="31579" article="an" name="embrace of nature">
@@ -59159,7 +59159,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="220"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="31583" article="a" name="toga mortis">
@@ -59179,7 +59179,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="220"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item fromid="31584" toid="31586" name="unknown item"/>
@@ -64198,7 +64198,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="120"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -64226,7 +64226,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="118"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -64239,7 +64239,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="34093" article="a" name="soulstrider">
@@ -64251,7 +64251,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="34094" article="a" name="soulshell">
@@ -64293,7 +64293,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
 			<attribute key="level" value="400"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="34096" article="a" name="soulshroud">
@@ -64313,7 +64313,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="armor"/>
 			<attribute key="level" value="400"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="34097" name="pair of soulwalkers">
@@ -64615,7 +64615,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="105"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -64640,7 +64640,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 			<attribute key="toDamage" value="109"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -66002,7 +66002,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="150"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="35520" name="make-do boots">
@@ -66018,7 +66018,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="150"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="35521" article="a" name="jungle rod">
@@ -66041,7 +66041,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="100"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -66065,7 +66065,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="100"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -67629,7 +67629,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="105"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -67657,7 +67657,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="105"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -67678,7 +67678,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="36671" article="a" name="eldritch hood">
@@ -67698,7 +67698,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="36672" article="a" name="eldritch folio">
@@ -67722,7 +67722,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="36673" article="a" name="eldritch tome">
@@ -67746,7 +67746,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="36674" article="a" name="eldritch rod">
@@ -67774,7 +67774,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="105"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -67804,7 +67804,7 @@ former students at the Noodles Academy. Awarded by TibiaLabs.com"/>
 			<attribute key="toDamage" value="105"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -71451,7 +71451,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39152" article="an" name="arcanomancer folio">
@@ -71475,7 +71475,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39153" article="an" name="arboreal crown">
@@ -71494,7 +71494,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39154" article="an" name="arboreal tome">
@@ -71518,7 +71518,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39155" article="a" name="naga sword">
@@ -71684,7 +71684,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="120"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -71711,7 +71711,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -71732,7 +71732,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="270"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39165" article="a" name="midnight tunic">
@@ -71753,7 +71753,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39166" article="a" name="dawnfire pantaloons">
@@ -71765,7 +71765,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39167" article="a" name="midnight sarong">
@@ -71777,7 +71777,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39168" article="a" name="heated crystal"/>
@@ -71895,7 +71895,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39184" article="a" name="charged arcanomancer sigil">
@@ -71918,7 +71918,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39185" article="an" name="arcanomancer sigil">
@@ -71934,7 +71934,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39186" article="a" name="charged arboreal ring">
@@ -71947,7 +71947,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39187" article="a" name="charged arboreal ring">
@@ -71968,7 +71968,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="39188" article="an" name="arboreal ring">
@@ -71983,7 +71983,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="400"/>
 			<attribute key="slot" value="ring"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item fromid="39195" toid="39200" name="lava">
@@ -74040,7 +74040,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="40593" article="a" name="mutant bone boots">
@@ -74056,7 +74056,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="40594" article="an" name="alchemist's notepad">
@@ -74078,7 +74078,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="40595" name="mutant bone kilt">
@@ -74090,7 +74090,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="42050" article="a" name="dead iks">
@@ -76185,7 +76185,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="125"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="fire"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -76226,7 +76226,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="125"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -76257,7 +76257,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="43885" article="a" name="sanguine rod">
@@ -76297,7 +76297,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="124"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -76338,7 +76338,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="124"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -76369,7 +76369,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="500"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="43891" article="a" name="sacrificial plate">
@@ -76648,7 +76648,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44620" name="stoic iks chestplate">
@@ -76758,7 +76758,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44624" article="an" name="mystical dragon robe">
@@ -76786,7 +76786,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44636" name="stoic iks casque">
@@ -76839,7 +76839,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44638" article="a" name="knight pedestal">
@@ -76891,7 +76891,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44648" name="stoic iks boots">
@@ -76936,7 +76936,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="250"/>
 			<attribute key="slot" value="feet"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="44651" article="a" name="dead dragolisk">
@@ -77324,7 +77324,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="200"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="45640" article="a" name="creamy grimoire">
@@ -77355,7 +77355,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="200"/>
 			<attribute key="slot" value="shield"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="45641" article="a" name="candy necklace">
@@ -77619,7 +77619,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="energy"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -77650,7 +77650,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="95"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="ice"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -81782,7 +81782,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="115"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -81808,7 +81808,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -81899,7 +81899,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="49534" article="a" name="demonfang mask">
@@ -81922,7 +81922,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="300"/>
 			<attribute key="slot" value="head"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item fromid="49633" toid="49650" article="a" name="demon claw mark" />
@@ -82586,7 +82586,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="115"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -82612,7 +82612,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="115"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -82638,7 +82638,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="115"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="death"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -82665,7 +82665,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -82691,7 +82691,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -82717,7 +82717,7 @@ Granted by TibiaGoals.com"/>
 			<attribute key="toDamage" value="110"/>
 			<attribute key="weaponType" value="wand"/>
 			<attribute key="wandType" value="earth"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
 	</item>
@@ -84716,7 +84716,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="270"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="51264" article="a" name="norcferatu bonecloak">
@@ -84745,7 +84745,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="270"/>
 			<attribute key="slot" value="armor"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="51265" article="a" name="norcferatu thornwraps">
@@ -84783,7 +84783,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="level" value="270"/>
 			<attribute key="slot" value="legs"/>
-			<attribute key="vocation" value="Druid;true, Elder Druid"/>
+			<attribute key="vocation" value="Druid;true, Elder Druid, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="51267" article="a" name="norcferatu fleshguards">
@@ -84846,7 +84846,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="script" value="moveevent">
 			<attribute key="slot" value="feet"/>
 			<attribute key="level" value="270"/>
-			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer"/>
+			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 		</attribute>
 	</item>
 	<item id="51276" name="spirited soil">
