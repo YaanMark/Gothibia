@@ -48,6 +48,7 @@ function setVocation.onSay(player, words, param)
 		return true
 	end
 
+	local input = param:trimSpace():lower()
 	local vocId = initialVocations[input]
 
 	if not vocId then
