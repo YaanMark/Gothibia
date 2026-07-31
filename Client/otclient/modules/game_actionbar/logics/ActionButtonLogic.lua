@@ -97,13 +97,13 @@ local function getItemNameById(itemId)
     return "this object"
 end
 
---- Checks if player can use a spell
 local function playerCanUseSpell(spellData)
-    if not g_game.isOnline() then
-        return
+    if not g_game.isOnline() or not spellData then
+        return false
     end
 
-    if not spellData then
+    local localPlayer = g_game.getLocalPlayer()
+    if not localPlayer then
         return false
     end
 
@@ -111,20 +111,24 @@ local function playerCanUseSpell(spellData)
         return false
     end
 
-    if spellData.mana and (player:getMana() < spellData.mana) then
+    if spellData.mana and (localPlayer:getMana() < spellData.mana) then
         return false
     end
 
-    if spellData.level and (player:getLevel() < spellData.level) then
+    if spellData.level and (localPlayer:getLevel() < spellData.level) then
         return false
     end
 
-    if spellData.soul and (player:getSoul() < spellData.soul) then
+    if spellData.soul and (localPlayer:getSoul() < spellData.soul) then
         return false
     end
 
-    if spellData.vocations and (not table.contains(spellData.vocations, translateVocation(player:getVocation()))) then
-        return false
+    if spellData.vocations then
+        local currentVoc = localPlayer:getVocation()
+        local translatedVoc = translateVocation(currentVoc)
+        if currentVoc ~= 0 and not table.contains(spellData.vocations, currentVoc) and not table.contains(spellData.vocations, translatedVoc) then
+            return false
+        end
     end
 
     return true

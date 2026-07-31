@@ -79,7 +79,7 @@ function setVocation.onSay(player, words, param)
 
 	player:setVocation(vocId)
 
-	-- Automatically learn all Hemomancer spells
+	-- Automatically learn all Hemomancer spells & set custom Hemomancer outfit
 	if vocId == VOCATION.ID.HEMOMANTE or vocId == VOCATION.ID.ARCH_HEMOMANTE then
 		local spellsToLearn = {
 			"Sanguine Bolt",
@@ -92,6 +92,18 @@ function setVocation.onSay(player, words, param)
 		for _, spellName in ipairs(spellsToLearn) do
 			player:learnSpell(spellName)
 		end
+
+		-- Set stylish dark carmine / blood-themed Mage Outfit
+		local hemomancerOutfit = {
+			lookType = player:getSex() == PLAYERSEX_FEMALE and 138 or 130,
+			lookHead = 114, -- Dark Red / Carmine
+			lookBody = 114,
+			lookLegs = 114,
+			lookFeet = 114,
+			lookAddons = 0,
+			lookMount = 0
+		}
+		player:setOutfit(hemomancerOutfit)
 	end
 
 	-- Deliver starter kit if available

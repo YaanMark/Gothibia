@@ -53,21 +53,28 @@ local function playerCanUseSpellLocal(spellData)
     if not g_game.isOnline() or not spellData then
         return false
     end
+    local localPlayer = g_game.getLocalPlayer()
+    if not localPlayer then
+        return false
+    end
     if spellData.needLearn and not spellListData[tostring(spellData.id)] then
         return false
     end
-    if spellData.mana and player and player:getMana() < spellData.mana then
+    if spellData.mana and localPlayer:getMana() < spellData.mana then
         return false
     end
-    if spellData.level and player and player:getLevel() < spellData.level then
+    if spellData.level and localPlayer:getLevel() < spellData.level then
         return false
     end
-    if spellData.soul and player and player:getSoul() < spellData.soul then
+    if spellData.soul and localPlayer:getSoul() < spellData.soul then
         return false
     end
-    if spellData.vocations and player and
-        not table.contains(spellData.vocations, translateVocation(player:getVocation())) then
-        return false
+    if spellData.vocations then
+        local currentVoc = localPlayer:getVocation()
+        local translatedVoc = translateVocation(currentVoc)
+        if currentVoc ~= 0 and not table.contains(spellData.vocations, currentVoc) and not table.contains(spellData.vocations, translatedVoc) then
+            return false
+        end
     end
     return true
 end
