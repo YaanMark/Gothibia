@@ -61,20 +61,20 @@ HotkeyShortcuts = {
 }
 
 function translateVocation(id)
-    if id == VocationsClient.Knight or id == VocationsClient.EliteKnight then
-        return VocationsServer.EliteKnight -- Elite Knight
-    elseif id == VocationsClient.Paladin or id == VocationsClient.RoyalPaladin then
-        return VocationsServer.RoyalPaladin -- Royal Paladin
-    elseif id == VocationsClient.Sorcerer or id == VocationsClient.MasterSorcerer then
-        return VocationsServer.MasterSorcerer -- Master Sorcerer
-    elseif id == VocationsClient.Druid or id == VocationsClient.ElderDruid then
-        return VocationsServer.ElderDruid -- Elder Druid
-    elseif id == VocationsClient.Monk or id == VocationsClient.ExaltedMonk then
-        return VocationsServer.ExaltedMonk -- Exalted Monk
-    elseif id == VocationsClient.Hemomante or id == VocationsClient.ArchHemomante then
-        return VocationsServer.ArchHemomante -- Arch Hemomante
+    if id == VocationsClient.Knight or id == VocationsClient.EliteKnight or id == VocationsServer.Knight or id == VocationsServer.EliteKnight then
+        return VocationsServer.EliteKnight
+    elseif id == VocationsClient.Paladin or id == VocationsClient.RoyalPaladin or id == VocationsServer.Paladin or id == VocationsServer.RoyalPaladin then
+        return VocationsServer.RoyalPaladin
+    elseif id == VocationsClient.Sorcerer or id == VocationsClient.MasterSorcerer or id == VocationsServer.Sorcerer or id == VocationsServer.MasterSorcerer then
+        return VocationsServer.MasterSorcerer
+    elseif id == VocationsClient.Druid or id == VocationsClient.ElderDruid or id == VocationsServer.Druid or id == VocationsServer.ElderDruid then
+        return VocationsServer.ElderDruid
+    elseif id == VocationsClient.Monk or id == VocationsClient.ExaltedMonk or id == VocationsServer.Monk or id == VocationsServer.ExaltedMonk then
+        return VocationsServer.ExaltedMonk
+    elseif id == VocationsClient.Hemomante or id == VocationsClient.ArchHemomante or id == VocationsServer.Hemomante or id == VocationsServer.ArchHemomante then
+        return VocationsServer.ArchHemomante
     end
-    return 0
+    return id
 end
 
 local UseTypeUseOnYourself = 1
