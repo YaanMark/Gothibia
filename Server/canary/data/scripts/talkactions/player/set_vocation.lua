@@ -93,9 +93,9 @@ function setVocation.onSay(player, words, param)
 			player:learnSpell(spellName)
 		end
 
-		-- Set stylish dark carmine / blood-themed Mage Outfit
+		-- Set official Hemomancer Outfit (1680 male, 1681 female)
 		local hemomancerOutfit = {
-			lookType = player:getSex() == PLAYERSEX_FEMALE and 138 or 130,
+			lookType = player:getSex() == PLAYERSEX_FEMALE and 1681 or 1680,
 			lookHead = 114, -- Dark Red / Carmine
 			lookBody = 114,
 			lookLegs = 114,
