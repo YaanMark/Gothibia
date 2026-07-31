@@ -128,5 +128,6 @@ function setVocation.onSay(player, words, param)
 	return true
 end
 
+setVocation:separator(" ")
 setVocation:groupType("normal")
 setVocation:register()
