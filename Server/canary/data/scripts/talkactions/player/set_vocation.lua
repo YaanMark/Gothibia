@@ -48,29 +48,7 @@ function setVocation.onSay(player, words, param)
 		return true
 	end
 
-	local input = param:trimSpace():lower()
-	local isGod = player:getGroup():getId() >= GROUP_TYPE_GAMEMASTER
-
-	-- If normal player and already has a vocation set (id > 0), deny change
-	if not isGod and player:getVocation():getId() ~= 0 then
-		player:sendCancelMessage("Voce ja possui uma vocacao definida e nao pode altera-la novamente.")
-		return true
-	end
-
-	local vocId = nil
-	if isGod then
-		-- GODs can set any vocation ID or Name
-		vocId = tonumber(input)
-		if not vocId then
-			local voc = Vocation(param:trimSpace())
-			if voc then
-				vocId = voc:getId()
-			end
-		end
-	else
-		-- Players can only pick initial vocations
-		vocId = initialVocations[input]
-	end
+	local vocId = initialVocations[input]
 
 	if not vocId then
 		player:sendCancelMessage("Vocacao invalida! Escolha entre: Sorcerer, Druid, Paladin, Knight, Monk ou Hemomante.")
