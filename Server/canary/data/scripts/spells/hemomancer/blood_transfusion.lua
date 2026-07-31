@@ -1,34 +1,53 @@
-local combat = Combat()
-combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_HEALING)
-combat:setParameter(COMBAT_PARAM_EFFECT, 30) -- effect 30: RED_RINGS
-combat:setParameter(COMBAT_PARAM_AGGRESSIVE, false)
-
-function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 3.0) + 25
-	local max = (level / 5) + (maglevel * 5.2) + 50
-	return min, max
-end
-
-combat:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
-
 local spell = Spell("instant")
 
 function spell.onCastSpell(creature, var)
-	local player = creature:getPlayer()
-	if player then
-		player:getPosition():sendMagicEffect(14) -- effect 14: REDSHIMMER
+	local target = creature:getTarget()
+	if not target or not target:isCreature() then
+		return false
 	end
-	return combat:execute(creature, var)
+
+	local player = creature:getPlayer()
+	if not player then
+		return false
+	end
+
+	local level = player:getLevel()
+	local maglevel = player:getMagicLevel()
+
+	-- Formula de dano moderado (nivel 1)
+	local minDmg = math.floor((level / 5) + (maglevel * 2.0) + 15)
+	local maxDmg = math.floor((level / 5) + (maglevel * 3.2) + 30)
+	local damage = math.random(minDmg, maxDmg)
+
+	-- Efeitos no alvo ao roubar sangue
+	local targetPos = target:getPosition()
+	targetPos:sendMagicEffect(215)
+	targetPos:sendMagicEffect(1) -- DRAWBLOOD
+
+	doTargetCombatHealth(player, target, COMBAT_DEATHDAMAGE, -damage, -damage, 215)
+
+	-- Roubo de Vida: cura 50% do dano causado diretamente no Hemomante
+	local healAmount = math.floor(damage * 0.5)
+	if healAmount > 0 then
+		player:addHealth(healAmount)
+	end
+
+	-- Efeito visual de anel de sangue no conjurador (effect 30: RED_RINGS)
+	local playerPos = player:getPosition()
+	playerPos:sendMagicEffect(30)
+
+	return true
 end
 
-spell:group("healing")
+spell:group("attack")
 spell:id(241)
 spell:name("Blood Transfusion")
 spell:words("exura sanguis")
 spell:castSound(SOUND_EFFECT_TYPE_SPELL_HEAL_FRIEND)
 spell:level(1)
 spell:mana(10)
-spell:isSelfTarget(true)
+spell:needTarget(true)
+spell:blockWalls(true)
 spell:isPremium(false)
 spell:cooldown(1 * 1000)
 spell:groupCooldown(1 * 1000)
