@@ -1,0 +1,41 @@
+[
+    {
+        "nameOfTheTask": "Snake",
+        "creature": "Snake",
+        "locked": true,
+        "repeatable": true,
+        "killsRequired": 280,
+        "rewards": {
+            "pointsReward": 17,
+            "itemRewards": [
+                {"itemId": 3577, "count": 10}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Rat",
+        "creature": "Rat",
+        "locked": true,
+        "repeatable": true,
+        "killsRequired": 280,
+        "rewards": {
+            "pointsReward": 15,
+            "itemRewards": [
+                {"itemId": 3577, "count": 10}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Munster",
+        "creature": "Munster",
+        "locked": true,
+        "repeatable": true,
+        "killsRequired": 350,
+        "rewards": {
+            "pointsReward": 20,
+            "itemRewards": [
+                {"itemId": 3577, "count": 10}
+            ]
+        }
+    }
+]

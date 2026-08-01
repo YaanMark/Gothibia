@@ -1,0 +1,1432 @@
+[
+    {
+        "nameOfTheTask": "Task Munster",
+        "creature": "Munster",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 5792, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Willi Wasp",
+        "creature": "Willi Wasp",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 19083, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Zomba",
+        "creature": "Zomba",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3052, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Blightfather",
+        "creature": "The Blightfather",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 10457, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Yeti",
+        "creature": "Yeti",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3553, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Raxias",
+        "creature": "Raxias",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Bibby Bloodbath",
+        "creature": "Bibby Bloodbath",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 7412, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Grand Mother Foulscale",
+        "creature": "Grand Mother Foulscale",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3416, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Percht Queen",
+        "creature": "The Percht Queen",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 30318, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Grorlam",
+        "creature": "Grorlam",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3283, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Black Vixen",
+        "creature": "Black Vixen",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 14142, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sharpclaw",
+        "creature": "Sharpclaw",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 22084, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Rahemos",
+        "creature": "Rahemos",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3335, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Mahrdis",
+        "creature": "Mahrdis",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3439, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Vashresamun",
+        "creature": "Vashresamun",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3022, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Thalas",
+        "creature": "Thalas",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3339, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Dipthrah",
+        "creature": "Dipthrah",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3334, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Omruc",
+        "creature": "Omruc",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3079, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Morguthis",
+        "creature": "Morguthis",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3331, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Darkfang",
+        "creature": "Darkfang",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 22084, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ashmunrah",
+        "creature": "Ashmunrah",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3023, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Bloodback",
+        "creature": "Bloodback",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 22084, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Shadowpelt",
+        "creature": "Shadowpelt",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 22084, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sugar Mommy",
+        "creature": "Sugar Mommy",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3038, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Srezz Yellow Eyes",
+        "creature": "Srezz Yellow Eyes",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 34258, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Yirkas Blue Scales",
+        "creature": "Yirkas Blue Scales",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 33778, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Katex Blood Tongue",
+        "creature": "Katex Blood Tongue",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 282, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Utua Stone Sting",
+        "creature": "Utua Stone Sting",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3420, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ahau",
+        "creature": "Ahau",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 40532, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sugar Daddy",
+        "creature": "Sugar Daddy",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 45643, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Tazhadur",
+        "creature": "Tazhadur",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3386, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Blazing Rose",
+        "creature": "The Blazing Rose",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Tyrn",
+        "creature": "Tyrn",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 19361, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Chizzoron the Distorter",
+        "creature": "Chizzoron the Distorter",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3032, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Lily of Night",
+        "creature": "The Lily of Night",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Diamond Blossom",
+        "creature": "The Diamond Blossom",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Chikhaton",
+        "creature": "Chikhaton",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Orshabaal",
+        "creature": "Orshabaal",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3038, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sister Hetai",
+        "creature": "Sister Hetai",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 37002, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task World Devourer",
+        "creature": "World Devourer",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 23684, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Amenef the Burning",
+        "creature": "Amenef the Burning",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31324, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Neferi the Spy",
+        "creature": "Neferi the Spy",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31324, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Unaz the Mean",
+        "creature": "Unaz the Mean",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 32770, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Scarlett Etzel",
+        "creature": "Scarlett Etzel",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31631, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Vok the Freakish",
+        "creature": "Vok the Freakish",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 32772, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Faceless Bane",
+        "creature": "Faceless Bane",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 28571, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Zulazza the Corruptor",
+        "creature": "Zulazza the Corruptor",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 10201, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The First Dragon",
+        "creature": "The First Dragon",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Brokul",
+        "creature": "Brokul",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 28825, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Pale Count",
+        "creature": "The Pale Count",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 18936, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Morgaroth",
+        "creature": "Morgaroth",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3422, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Grand Master Oberon",
+        "creature": "Grand Master Oberon",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 28721, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Lloyd",
+        "creature": "Lloyd",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 24393, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Tentugly's Head",
+        "creature": "Tentugly's Head",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 35610, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Timira the Many-Headed",
+        "creature": "Timira the Many-Headed",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 39164, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Count Vlarkorth",
+        "creature": "Count Vlarkorth",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31738, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Duke Krule",
+        "creature": "Duke Krule",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31738, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Earl Osam",
+        "creature": "Earl Osam",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31738, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sir Baeloc",
+        "creature": "Sir Baeloc",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31738, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Sir Nictros",
+        "creature": "Sir Nictros",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ghazbaran",
+        "creature": "Ghazbaran",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3360, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ferumbras",
+        "creature": "Ferumbras",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 7382, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Mounted Thorn Knight",
+        "creature": "Mounted Thorn Knight",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Realityquake",
+        "creature": "Realityquake",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 281, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Izcandar Champion of Summer",
+        "creature": "Izcandar Champion of Summer",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 29421, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Izcandar Champion of Winter",
+        "creature": "Izcandar Champion of Winter",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 29422, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Dragonking Zyrtarch",
+        "creature": "Dragonking Zyrtarch",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ascending Ferumbras",
+        "creature": "Ascending Ferumbras",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Lady Tenebris",
+        "creature": "Lady Tenebris",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 3341, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Time Guardian",
+        "creature": "The Time Guardian",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 5809, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Deathstrike",
+        "creature": "Deathstrike",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 16162, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Mitmah Vanguard",
+        "creature": "Mitmah Vanguard",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 44642, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Ratmiral Blackwhiskers",
+        "creature": "Ratmiral Blackwhiskers",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 35614, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Gnomevil",
+        "creature": "Gnomevil",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 16155, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Anomaly",
+        "creature": "Anomaly",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 23474, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Eradicator",
+        "creature": "Eradicator",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 8075, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Outburst",
+        "creature": "Outburst",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 23474, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Rupture",
+        "creature": "Rupture",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 23474, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Unwelcome",
+        "creature": "The Unwelcome",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 32628, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Lord Azaram",
+        "creature": "Lord Azaram",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31738, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Brainstealer",
+        "creature": "The Brainstealer",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 36835, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Dread Maiden",
+        "creature": "The Dread Maiden",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 32619, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Alptramun",
+        "creature": "Alptramun",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 7414, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Izcandar the Banished",
+        "creature": "Izcandar the Banished",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 30061, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Malofur Mangrinder",
+        "creature": "Malofur Mangrinder",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 29419, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Maxxenius",
+        "creature": "Maxxenius",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 7414, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Plagueroot",
+        "creature": "Plagueroot",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 30170, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Abyssador",
+        "creature": "Abyssador",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 16155, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Pale Worm",
+        "creature": "The Pale Worm",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 32628, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Monster",
+        "creature": "The Monster",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 40588, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Magma Bubble",
+        "creature": "Magma Bubble",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 39154, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task King Zelos",
+        "creature": "King Zelos",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31583, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Mutated Pumpkin",
+        "creature": "The Mutated Pumpkin",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 8032, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task Urmahlullu the Weakened",
+        "creature": "Urmahlullu the Weakened",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 31573, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Last Lore Keeper",
+        "creature": "The Last Lore Keeper",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 7450, "count": 1}
+            ]
+        }
+    },
+    {
+        "nameOfTheTask": "Task The Nightmare Beast",
+        "creature": "The Nightmare Beast",
+        "locked": false,
+        "repeatable": true,
+        "suggestedlocation": "Sem informacao",
+        "killsRequired": 5,
+        "rewards": {
+            "pointsReward": 2,
+            "itemRewards": [
+                {"itemId": 3725, "count": 35},
+                {"itemId": 30060, "count": 1}
+            ]
+        }
+    }
+]

@@ -1,0 +1,715 @@
+PanelTop < Panel
+  text-offset: 0 3
+  text-align: top
+  padding-left: 7
+  padding-bottom: 7
+  padding-top: 24
+  padding-right: 7
+
+TaskSelectionButton < Panel
+  background-color: #14141450
+  border: 3 #1f1f1f
+  focusable: true
+  phantom: false
+  @onDoubleClick: modules.game_task.onTaskClick(self)
+
+  $hover:
+    border: 3 #a3a3a3
+
+  $focus:
+    border: 3 #a3a3a3
+    image-color: #ffffff
+
+  Label
+    id: name
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 8
+    text-align: top
+    text-wrap: true
+    text-border: 5 black
+
+  UICreature
+    id: creature
+    size: 60 60
+    phantom: true
+    margin-top: 50
+    anchors.verticalCenter: name.verticalCenter
+    anchors.HorizontalCenter: name.HorizontalCenter
+
+  Label
+    id: reward
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-bottom: 45
+    text-wrap: true
+
+  Label
+    id: rewardTaskPoints
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-bottom: 29
+    text-wrap: true
+	
+  Panel
+    id: progressEmpty
+    border: 1 black
+    margin-left: 3
+    margin-right: 3
+    margin-bottom: 3
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    size: 0 20   	    
+	
+  Panel
+    id: progress
+    image-source: /images/ui/panel_flat
+    image-color: #00ff00
+    margin-left: 3
+    margin-bottom: 3
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    size: 0 20
+	
+  Label
+    id: kills
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-bottom: 5
+    text-wrap: true		
+
+  Label
+    id: health
+    anchors.top: name.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    margin-top: 5
+    font: verdana-11px-rounded
+    color: #00ff00
+    text-auto-resize: true
+    text-align: center
+    visible: false		
+
+  Label
+    id: orderNum
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 5
+    margin-right: 5
+    width: 33
+    height: 16
+    text-align: center
+    font: verdana-11px-rounded
+    color: #cccccc
+    background-color: #00000099
+    phantom: true
+
+  Label
+    id: lockedText
+    anchors.fill: parent
+    text-align: center
+    font: verdana-11px-rounded
+    color: #ff5555
+    phantom: true
+
+ShopButton < Panel
+  background-color: #1a1a2a99
+  border: 1 #333355
+  height: 80
+  focusable: false
+
+  UIItem
+    id: shopItemId
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 8
+    size: 40 40
+    virtual: true
+
+  UIWidget
+    id: shopImage
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 8
+    size: 40 40
+    visible: false
+
+  UICreature
+    id: shopMountId
+    anchors.left: parent.left
+    anchors.verticalCenter: parent.verticalCenter
+    margin-left: 4
+    size: 48 48
+    phantom: true
+    visible: false
+
+  Label
+    id: shopName
+    anchors.top: parent.top
+    anchors.left: shopItemId.right
+    anchors.right: parent.right
+    margin-left: 8
+    margin-top: 7
+    font: verdana-11px-rounded
+    color: #dddddd
+
+  Label
+    id: shopCount
+    anchors.top: shopName.bottom
+    anchors.left: shopItemId.right
+    margin-left: 8
+    margin-top: 3
+    color: #aaaaaa
+    font: verdana-11px-rounded
+
+  Label
+    id: shopPrice
+    anchors.top: shopCount.bottom
+    anchors.left: shopItemId.right
+    margin-left: 8
+    margin-top: 3
+    color: #00dd00
+    font: verdana-11px-rounded
+
+  Button
+    id: shopBuy
+    text: Buy
+    anchors.right: parent.right
+    anchors.verticalCenter: parent.verticalCenter
+    width: 55
+    height: 24
+    margin-right: 8
+
+Window
+  size: 732 550
+  id: tasksWindow
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.HorizontalCenter: parent.HorizontalCenter
+  @onEscape: modules.game_task.toggleWindow()
+  text: Tasks
+
+  Panel
+    id: tabPanel
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 5
+    margin-left: 24
+    margin-right: 25
+    height: 24
+    layout:
+      type: horizontalBox
+      spacing: 4
+
+    Button
+      id: tabTasks
+      text: Tasks
+      width: 80
+      height: 24
+      enabled: false
+      @onClick: modules.game_task.switchTab('tasks')
+
+    Button
+      id: tabBoss
+      text: Boss
+      width: 80
+      height: 24
+      @onClick: modules.game_task.switchTab('boss')
+
+    Button
+      id: tabExclusive
+      text: Exclusivas
+      width: 80
+      height: 24
+      @onClick: modules.game_task.switchTab('exclusive')
+
+    Button
+      id: tabShop
+      text: Shop
+      width: 80
+      height: 24
+      @onClick: modules.game_task.switchTab('shop')  
+
+    Button
+      id: tabReset
+      text: Reset *
+      width: 70
+      height: 24
+      color: #ff6666
+      visible: false
+      @onClick: modules.game_task.resetProgress()
+
+  TextEdit
+    id: search
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    width: 400
+    margin-top: 40
+    margin-left: 24
+    margin-right: 17
+    height: 18
+    placeholder: Search by name
+    placeholder-color: #c0c0c0c0
+
+  Panel
+    id: selectionList
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-top: 69
+    margin-right: 20
+    margin-left: 20
+    margin-bottom: 96
+    padding: 4
+    layout:
+      type: grid
+      cell-size: 160 160
+      cell-spacing: 2
+      flow: true
+
+  Panel
+    id: shopPanel
+    visible: false
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-top: 69
+    margin-right: 20
+    margin-left: 20
+    margin-bottom: 96
+    padding: 4
+    layout:
+      type: grid
+      cell-size: 324 77
+      cell-spacing: 4
+      flow: true
+
+  Panel
+    id: exclusivePanel
+    visible: false
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-top: 69
+    margin-right: 20
+    margin-left: 20
+    margin-bottom: 96
+    padding: 4
+    layout:
+      type: grid
+      cell-size: 160 160
+      cell-spacing: 2
+      flow: true
+
+  Panel
+    id: bossPanel
+    visible: false
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-top: 69
+    margin-right: 20
+    margin-left: 20
+    margin-bottom: 96
+    padding: 4
+    layout:
+      type: grid
+      cell-size: 160 160
+      cell-spacing: 2
+      flow: true
+
+  Panel
+    id: pagePanel
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-bottom: 68
+    margin-left: 20
+    margin-right: 20
+    height: 22
+    visible: false
+
+    Button
+      id: firstButton
+      text: |< Ini
+      anchors.left: parent.left
+      anchors.verticalCenter: parent.verticalCenter
+      width: 60
+      height: 20
+      @onClick: modules.game_task.firstPage()
+
+    Button
+      id: prevButton
+      text: < Prev
+      anchors.left: firstButton.right
+      anchors.verticalCenter: parent.verticalCenter
+      margin-left: 4
+      width: 60
+      height: 20
+      @onClick: modules.game_task.prevPage()
+
+    Button
+      id: activeFilterButton
+      text: Active
+      anchors.left: prevButton.right
+      anchors.verticalCenter: parent.verticalCenter
+      margin-left: 4
+      width: 60
+      height: 20
+      color: #ff6666
+      @onClick: modules.game_task.toggleActiveFilter()
+
+    Label
+      id: pageLabel
+      anchors.horizontalCenter: parent.horizontalCenter
+      anchors.verticalCenter: parent.verticalCenter
+      text: Page 1 / 1
+      text-align: center
+      width: 120
+      font: verdana-11px-rounded
+      color: #cccccc
+
+    Button
+      id: nextButton
+      text: Next >
+      anchors.right: lastButton.left
+      anchors.verticalCenter: parent.verticalCenter
+      margin-right: 4
+      width: 60
+      height: 20
+      @onClick: modules.game_task.nextPage()
+
+    Button
+      id: lastButton
+      text: Fim >|
+      anchors.right: parent.right
+      anchors.verticalCenter: parent.verticalCenter
+      width: 60
+      height: 20
+      @onClick: modules.game_task.lastPage()
+
+  Label
+    id: info
+    anchors.bottom: parent.bottom
+    anchors.horizontalCenter: parent.horizontalCenter
+    width: 320
+    height: 30
+    margin-bottom: 22
+    text-align: center
+    text-wrap: true
+
+  Label
+    id: pointsPlayer
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    width: 110
+    height: 30
+    margin-left: 20
+    margin-bottom: 22
+    text-align: left
+    text-wrap: true
+    text: Pontos: 0
+
+  Button
+    id: toggleButton
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    text: Close
+    width: 65
+    margin-right: 25
+    margin-bottom: 20
+    @onClick: modules.game_task.toggleWindow()
+
+  Button
+    id: finishButton
+    anchors.bottom: parent.bottom
+    anchors.right: toggleButton.left
+    text: Finish
+    width: 55
+    margin-right: 5
+    margin-bottom: 20	
+    @onClick: modules.game_task.finish()
+
+  Button
+    id: startButton
+    anchors.bottom: parent.bottom
+    anchors.right: toggleButton.left
+    text: Start
+    width: 55
+    margin-right: 5
+    margin-bottom: 20	
+    color: #1eff00
+    @onClick: modules.game_task.start()
+
+  Button
+    id: abortButton
+    anchors.bottom: parent.bottom
+    anchors.right: toggleButton.left
+    text: Abort
+    width: 55
+    margin-right: 5
+    margin-bottom: 20	
+    color: #ff6666
+    @onClick: modules.game_task.abort()
+
+  Button
+    id: wikiButton
+    anchors.bottom: parent.bottom
+    anchors.right: abortButton.left
+    text: Wiki
+    width: 55
+    margin-right: 25
+    margin-bottom: 20
+    visible: false
+    color: #d9ff00
+    @onClick: modules.game_task.openWiki()
+	
+  PanelTop
+    id: detailTab
+    anchors.fill: parent
+    padding: 20
+    visible: false
+
+    Label
+      id: creatureName
+      anchors.top: parent.top
+      anchors.horizontalCenter: parent.horizontalCenter
+      font: verdana-11px-rounded
+      text-auto-resize: true
+      margin-top: 10
+      color: #ff8400
+      
+    UICreature
+      id: creatureImage
+      size: 100 100
+      anchors.top: prev.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
+      margin-top: 10
+      
+    Label
+      id: detailHealth
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: #00ff00
+      text-align: center
+      text-wrap: true
+
+    Label
+      id: detailStats
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: #bbbbbb
+      text-align: center
+      text-wrap: true
+
+    Panel
+      id: detailElementsRow1
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      height: 16
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+
+      Label
+        id: elemPhysical
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 117
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemEarth
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 210
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemFire
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 290
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemDeath
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 375
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+    Panel
+      id: detailElementsRow2
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      height: 16
+      margin-top: 2
+      margin-left: 10
+      margin-right: 10
+
+      Label
+        id: elemEnergy
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 117
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemHoly
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 210
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemIce
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 290
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+
+      Label
+        id: elemHeal
+        anchors.top: parent.top
+        anchors.left: parent.left
+        margin-left: 375
+        width: 164
+        font: verdana-11px-rounded
+        text-align: center
+        color: #888888
+      
+    Label
+      id: detailKills
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 20
+      margin-left: 10
+      margin-right: 10
+      text-align: center
+      text-wrap: true
+      
+    Label
+      id: detailPoints
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: red
+      text-align: center
+      text-wrap: true
+      
+    Label
+      id: detailExp
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: white
+      text-align: center
+      text-wrap: true
+
+    Label
+      id: detailMoney
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: #f0d060
+      text-align: center
+      text-wrap: true
+
+    Label
+      id: detailLocation
+      anchors.top: prev.bottom
+      anchors.left: parent.left
+      anchors.right: parent.right
+      height: 30
+      margin-top: 5
+      margin-left: 10
+      margin-right: 10
+      color: #80c8ff
+      text-align: center
+      text-wrap: true
+      visible: false
+
+    Label
+      id: rewardTitle
+      text: "Items:"
+      anchors.top: detailLocation.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
+      margin-top: 20
+      font: verdana-11px-rounded
+      visible: false
+
+    Panel
+      id: rewardItems
+      anchors.top: prev.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
+      margin-top: 10
+      width: 370
+      height: 36
+      layout:
+        type: grid
+        cell-size: 34 34
+        cell-spacing: 2
+        num-columns: 10
+
+    Button
+      id: backButton
+      text: "Back"
+      anchors.bottom: parent.bottom
+      anchors.horizontalCenter: parent.horizontalCenter
+      width: 80
+      margin-bottom: 20
+      @onClick: modules.game_task.openMainModule()	

@@ -97,6 +97,11 @@ void ItemFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Item", "getShader", ItemFunctions::luaItemGetShader);
 	Lua::registerMethod(L, "Item", "hasShader", ItemFunctions::luaItemHasShader);
 
+	Lua::registerMethod(L, "Item", "getRefine", ItemFunctions::luaItemGetRefine);
+	Lua::registerMethod(L, "Item", "setRefine", ItemFunctions::luaItemSetRefine);
+	Lua::registerMethod(L, "Item", "getItemLevel", ItemFunctions::luaItemGetItemLevel);
+	Lua::registerMethod(L, "Item", "getRarity", ItemFunctions::luaItemGetRarity);
+
 	ContainerFunctions::init(L);
 	ImbuementFunctions::init(L);
 	ItemTypeFunctions::init(L);
@@ -1181,3 +1186,45 @@ int ItemFunctions::luaItemSetShader(lua_State* L) {
 	Lua::pushBoolean(L, true);
 	return 1;
 }
+
+int ItemFunctions::luaItemGetRefine(lua_State* L) {
+	std::shared_ptr<Item> item = Lua::getUserdataShared<Item>(L, 1, "Item");
+	if (item) {
+		lua_pushnumber(L, item->getRefine());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int ItemFunctions::luaItemSetRefine(lua_State* L) {
+	std::shared_ptr<Item> item = Lua::getUserdataShared<Item>(L, 1, "Item");
+	if (item) {
+		item->setRefine(Lua::getNumber<uint8_t>(L, 2));
+		Lua::pushBoolean(L, true);
+	} else {
+		Lua::pushBoolean(L, false);
+	}
+	return 1;
+}
+
+int ItemFunctions::luaItemGetItemLevel(lua_State* L) {
+	std::shared_ptr<Item> item = Lua::getUserdataShared<Item>(L, 1, "Item");
+	if (item) {
+		lua_pushnumber(L, item->getItemLevel());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int ItemFunctions::luaItemGetRarity(lua_State* L) {
+	std::shared_ptr<Item> item = Lua::getUserdataShared<Item>(L, 1, "Item");
+	if (item) {
+		lua_pushnumber(L, item->getRarity());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+

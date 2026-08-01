@@ -1355,6 +1355,15 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream &propStream) {
 			setAttribute(ItemAttribute_t::OBTAINCONTAINER, flags);
 			break;
 		}
+
+		case ATTR_REFINE: {
+			uint8_t refine;
+			if (!propStream.read<uint8_t>(refine)) {
+				return ATTR_READ_ERROR;
+			}
+			setAttribute(ItemAttribute_t::REFINE, refine);
+			break;
+		}
 		default:
 			return ATTR_READ_ERROR;
 	}
@@ -1529,6 +1538,11 @@ void Item::serializeAttr(PropWriteStream &propWriteStream) const {
 	if (hasAttribute(ItemAttribute_t::OWNER)) {
 		propWriteStream.write<uint8_t>(ATTR_OWNER);
 		propWriteStream.write<uint32_t>(getAttribute<uint32_t>(ItemAttribute_t::OWNER));
+	}
+
+	if (hasAttribute(ItemAttribute_t::REFINE)) {
+		propWriteStream.write<uint8_t>(ATTR_REFINE);
+		propWriteStream.write<uint8_t>(getAttribute<uint8_t>(ItemAttribute_t::REFINE));
 	}
 
 	// Serialize custom attributes, only serialize if the map not is empty

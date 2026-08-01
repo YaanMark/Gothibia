@@ -17,7 +17,7 @@ function createNpc.onSay(player, words, param)
 	local permanentStr = split[2]
 
 	local position = player:getPosition()
-	local npc = Game.createNpc(name, position)
+	local npc = Game.createNpc(name, position, false, true)
 	if npc then
 		npc:setMasterPos(position)
 		position:sendMagicEffect(CONST_ME_MAGIC_RED)
@@ -51,7 +51,7 @@ function createNpc.onSay(player, words, param)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Permanent NPC added successfully.")
 		end
 	else
-		player:sendCancelMessage("There is not enough room.")
+		player:sendCancelMessage("Falha ao criar o NPC! Verifique se ele está registrado corretamente.")
 		position:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true

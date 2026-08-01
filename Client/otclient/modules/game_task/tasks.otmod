@@ -1,0 +1,10 @@
+Module
+  name: game_task
+  description: Sistema completo de tasks com suporte a rewards, progressão, categorias, etc.
+  author: vini21
+  sandboxed: true
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ tasks ]
+  @onLoad: init()
+  @onUnload: terminate()

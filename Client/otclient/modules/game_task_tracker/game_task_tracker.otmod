@@ -1,0 +1,10 @@
+Module
+  name: game_task_tracker
+  description: Painel compacto com tasks ativas e progresso de kills
+  author: XimbaOT
+  sandboxed: true
+  autoload: true
+  autoload-priority: 1000
+  scripts: [ game_task_tracker ]
+  @onLoad: init()
+  @onUnload: terminate()

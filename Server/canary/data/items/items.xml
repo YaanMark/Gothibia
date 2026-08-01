@@ -22253,6 +22253,8 @@
 			<attribute key="vocation" value="Sorcerer;true, Master Sorcerer, Hemomante;true, Arch Hemomante"/>
 			<attribute key="slot" value="hand"/>
 		</attribute>
+		<attribute key="itemlevel" value="10" />
+    	<attribute key="rarity" value="1" />
 	</item>
 	<item id="8095" name="ranger legs">
 		<attribute key="primarytype" value="legs"/>

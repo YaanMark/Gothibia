@@ -13230,3 +13230,7 @@ void Player::sendWeaponProficiency(uint16_t weaponId /* = 0 */) {
 		client->sendWeaponProficiency(weaponId);
 	}
 }
+
+void Player::recalculateGearScore() {
+	EventsCallbacks::getInstance().executeCallback(EventCallback_t::playerOnRecalculateGearScore, getPlayer());
+}

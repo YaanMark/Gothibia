@@ -79,6 +79,8 @@ void ItemTypeFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "ItemType", "getVocationString", ItemTypeFunctions::luaItemTypeGetVocationString);
 	Lua::registerMethod(L, "ItemType", "getElementalBond", ItemTypeFunctions::luaItemTypeGetElementalBond);
 
+	Lua::registerMethod(L, "ItemType", "getItemLevel", ItemTypeFunctions::luaItemTypeGetItemLevel);
+	Lua::registerMethod(L, "ItemType", "getRarity", ItemTypeFunctions::luaItemTypeGetRarity);
 	Lua::registerMethod(L, "ItemType", "hasSubType", ItemTypeFunctions::luaItemTypeHasSubType);
 
 	ItemClassificationFunctions::init(L);
@@ -728,3 +730,24 @@ int ItemTypeFunctions::luaItemTypeGetElementalBond(lua_State* L) {
 	}
 	return 1;
 }
+
+int ItemTypeFunctions::luaItemTypeGetItemLevel(lua_State* L) {
+	const ItemType* itemType = Lua::getUserdata<const ItemType>(L, 1);
+	if (itemType) {
+		lua_pushnumber(L, itemType->itemLevel);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int ItemTypeFunctions::luaItemTypeGetRarity(lua_State* L) {
+	const ItemType* itemType = Lua::getUserdata<const ItemType>(L, 1);
+	if (itemType) {
+		lua_pushnumber(L, itemType->rarity);
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+

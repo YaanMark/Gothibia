@@ -84,6 +84,8 @@ void ItemParse::initParse(const std::string &stringValue, pugi::xml_node attribu
 	ItemParse::parsePrimaryType(stringValue, valueAttribute, itemType);
 	ItemParse::parseProficiency(stringValue, valueAttribute, itemType);
 	ItemParse::parseHouseRelated(stringValue, valueAttribute, itemType);
+	ItemParse::parseItemLevel(stringValue, valueAttribute, itemType);
+	ItemParse::parseRarity(stringValue, valueAttribute, itemType);
 	ItemParse::parseUnscriptedItems(stringValue, attributeNode, valueAttribute, itemType);
 }
 
@@ -1313,5 +1315,17 @@ void ItemParse::parseUnscriptedItems(std::string_view stringValue, pugi::xml_nod
 				createAndRegisterScript(itemType, attributeNode, MOVE_EVENT_NONE, weaponType);
 			}
 		}
+	}
+}
+
+void ItemParse::parseItemLevel(const std::string &stringValue, pugi::xml_attribute valueAttribute, ItemType &itemType) {
+	if (ItemParseAttributesMap.find(stringValue) != ItemParseAttributesMap.end() && ItemParseAttributesMap.at(stringValue) == ITEM_PARSE_ITEMLEVEL) {
+		itemType.itemLevel = pugi::cast<uint16_t>(valueAttribute.value());
+	}
+}
+
+void ItemParse::parseRarity(const std::string &stringValue, pugi::xml_attribute valueAttribute, ItemType &itemType) {
+	if (ItemParseAttributesMap.find(stringValue) != ItemParseAttributesMap.end() && ItemParseAttributesMap.at(stringValue) == ITEM_PARSE_RARITY) {
+		itemType.rarity = pugi::cast<uint8_t>(valueAttribute.value());
 	}
 }

@@ -93,6 +93,10 @@ class PlayerFunctions {
 	static int luaPlayerRemoveExperience(lua_State* L);
 	static int luaPlayerGetLevel(lua_State* L);
 
+	static int luaPlayerGetGearScore(lua_State* L);
+	static int luaPlayerSetGearScore(lua_State* L);
+	static int luaPlayerRecalculateGearScore(lua_State* L);
+
 	static int luaPlayerGetMagicShieldCapacityFlat(lua_State* L);
 	static int luaPlayerGetMagicShieldCapacityPercent(lua_State* L);
 

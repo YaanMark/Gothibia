@@ -1,0 +1,108 @@
+TaskTrackerRow < UIWidget
+  height: 30
+  background-color: alpha
+
+  Label
+    id: rowType
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 2
+    margin-left: 2
+    width: 12
+    height: 13
+    font: verdana-11px-rounded
+    color: #4488ff
+    text-align: center
+    phantom: true
+
+  Label
+    id: rowName
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-top: 2
+    margin-left: 16
+    margin-right: 50
+    height: 13
+    font: verdana-11px-rounded
+    color: #dddddd
+    phantom: true
+
+  Label
+    id: rowKills
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 2
+    margin-right: 4
+    height: 13
+    font: verdana-11px-rounded
+    color: #eecc44
+    text-align: right
+    phantom: true
+
+  UIWidget
+    id: progressBg
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-bottom: 3
+    margin-left: 4
+    margin-right: 4
+    height: 5
+    background-color: #2a2a3a
+
+  UIWidget
+    id: progressFill
+    anchors.top: progressBg.top
+    anchors.left: progressBg.left
+    anchors.bottom: progressBg.bottom
+    width: 0
+    background-color: #4488ff
+
+MiniWindow
+  id: tasktracker
+  width: 200
+  height: 100
+  &save: true
+  @onOpen: modules.game_task_tracker.onMiniWindowOpen()
+  @onClose: modules.game_task_tracker.onMiniWindowClose()
+
+  UIWidget
+    id: miniwindowIcon
+    anchors.top: miniwindowHeader.top
+    anchors.left: miniwindowHeader.left
+    margin-top: 2
+    margin-left: 4
+    size: 12 12
+    image-source: /game_task_tracker/images/topbutton_taskTracker
+    image-smooth: false
+
+  Label
+    id: miniwindowTitle
+    anchors.top: miniwindowHeader.top
+    anchors.left: miniwindowHeader.left
+    anchors.right: miniwindowHeader.right
+    margin-top: 2
+    margin-left: 20
+    margin-right: 50
+    font: verdana-11px-monochrome
+    height: 13
+    !text: tr('Task Tracker')
+    color: #9d9d9dff
+
+  MiniWindowContents
+    id: contentsPanel
+    anchors.top: miniwindowTopBar.bottom
+    anchors.left: parent.left
+    anchors.right: miniwindowScrollBar.left
+    anchors.bottom: parent.bottom
+    margin-left: 3
+    margin-top: -2
+    margin-right: 1
+    vertical-scrollbar: miniwindowScrollBar
+    padding-left: 4
+    padding-right: 4
+    padding-top: 2
+    padding-bottom: 4
+    layout: verticalBox
+    spacing: 2

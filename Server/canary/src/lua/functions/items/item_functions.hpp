@@ -81,8 +81,12 @@ private:
 	static int luaItemGetTier(lua_State* L);
 	static int luaItemSetTier(lua_State* L);
 	static int luaItemGetClassification(lua_State* L);
-
 	static int luaItemCanReceiveAutoCarpet(lua_State* L);
+
+	static int luaItemGetRefine(lua_State* L);
+	static int luaItemSetRefine(lua_State* L);
+	static int luaItemGetItemLevel(lua_State* L);
+	static int luaItemGetRarity(lua_State* L);
 
 	static int luaItemSetOwner(lua_State* L);
 	static int luaItemGetOwnerId(lua_State* L);

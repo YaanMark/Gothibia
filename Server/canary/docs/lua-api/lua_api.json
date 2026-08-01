@@ -2344,6 +2344,12 @@
         "source": "src/lua/functions/items/item_functions.cpp"
       },
       {
+        "name": "getItemLevel",
+        "params": [],
+        "return": "number|nil",
+        "source": "src/lua/functions/items/item_functions.cpp"
+      },
+      {
         "name": "getName",
         "params": [],
         "return": "string|nil",
@@ -2377,6 +2383,18 @@
         "name": "getPosition",
         "params": [],
         "return": "nil|Position",
+        "source": "src/lua/functions/items/item_functions.cpp"
+      },
+      {
+        "name": "getRarity",
+        "params": [],
+        "return": "number|nil",
+        "source": "src/lua/functions/items/item_functions.cpp"
+      },
+      {
+        "name": "getRefine",
+        "params": [],
+        "return": "number|nil",
         "source": "src/lua/functions/items/item_functions.cpp"
       },
       {
@@ -2571,6 +2589,14 @@
         "source": "src/lua/functions/items/item_functions.cpp"
       },
       {
+        "name": "setRefine",
+        "params": [
+          "arg2: number"
+        ],
+        "return": "boolean",
+        "source": "src/lua/functions/items/item_functions.cpp"
+      },
+      {
         "name": "setShader",
         "params": [
           "shaderName: string"
@@ -2742,6 +2768,12 @@
         "source": "src/lua/functions/items/item_type_functions.cpp"
       },
       {
+        "name": "getItemLevel",
+        "params": [],
+        "return": "number|nil",
+        "source": "src/lua/functions/items/item_type_functions.cpp"
+      },
+      {
         "name": "getName",
         "params": [],
         "return": "string|nil",
@@ -2751,6 +2783,12 @@
         "name": "getPluralName",
         "params": [],
         "return": "string|nil",
+        "source": "src/lua/functions/items/item_type_functions.cpp"
+      },
+      {
+        "name": "getRarity",
+        "params": [],
+        "return": "number|nil",
         "source": "src/lua/functions/items/item_type_functions.cpp"
       },
       {
@@ -6278,6 +6316,12 @@
         "source": "src/lua/functions/creatures/player/player_functions.cpp"
       },
       {
+        "name": "getGearScore",
+        "params": [],
+        "return": "number|nil",
+        "source": "src/lua/functions/creatures/player/player_functions.cpp"
+      },
+      {
         "name": "getGrindingXpBoost",
         "params": [],
         "return": "number|nil",
@@ -6996,6 +7040,12 @@
         "source": "src/lua/functions/creatures/player/player_functions.cpp"
       },
       {
+        "name": "recalculateGearScore",
+        "params": [],
+        "return": "boolean",
+        "source": "src/lua/functions/creatures/player/player_functions.cpp"
+      },
+      {
         "name": "reloadData",
         "params": [],
         "return": "boolean|nil",
@@ -7490,6 +7540,14 @@
       },
       {
         "name": "setForgeDusts",
+        "params": [
+          "arg2: number"
+        ],
+        "return": "boolean",
+        "source": "src/lua/functions/creatures/player/player_functions.cpp"
+      },
+      {
+        "name": "setGearScore",
         "params": [
           "arg2: number"
         ],

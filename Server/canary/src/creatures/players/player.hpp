@@ -1766,6 +1766,7 @@ private:
 	std::array<uint8_t, ConditionType_t::CONDITION_COUNT> m_conditionSuppressionCount {};
 
 	uint32_t level = 1;
+	uint32_t gearScore = 0;
 	uint32_t magLevel = 0;
 	uint32_t actionTaskEvent = 0;
 	uint32_t actionTaskEventPush = 0;
@@ -1895,6 +1896,11 @@ private:
 	bool isPromoted() const;
 
 	uint32_t getAttackSpeed() const;
+
+	uint32_t getGearScore() const {
+		return gearScore;
+	}
+	void recalculateGearScore();
 
 	static double_t getPercentLevel(uint64_t count, uint64_t nextLevelCount);
 	double getLostPercent() const;

@@ -1568,6 +1568,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Returns: `boolean|number`
 - Source: `src/lua/functions/items/item_functions.cpp`
 
+#### `Item:getItemLevel()`
+
+- Returns: `number|nil`
+- Source: `src/lua/functions/items/item_functions.cpp`
+
 #### `Item:getName()`
 
 - Returns: `string|nil`
@@ -1596,6 +1601,16 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 #### `Item:getPosition()`
 
 - Returns: `nil|Position`
+- Source: `src/lua/functions/items/item_functions.cpp`
+
+#### `Item:getRarity()`
+
+- Returns: `number|nil`
+- Source: `src/lua/functions/items/item_functions.cpp`
+
+#### `Item:getRefine()`
+
+- Returns: `number|nil`
 - Source: `src/lua/functions/items/item_functions.cpp`
 
 #### `Item:getShader()`
@@ -1724,6 +1739,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Source: `src/lua/functions/items/item_functions.cpp`
 
 #### `Item:setOwner(creatureOrCreatureId: number|Creature)`
+
+- Returns: `boolean`
+- Source: `src/lua/functions/items/item_functions.cpp`
+
+#### `Item:setRefine(arg2: number)`
 
 - Returns: `boolean`
 - Source: `src/lua/functions/items/item_functions.cpp`
@@ -1857,6 +1877,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Returns: `number|nil`
 - Source: `src/lua/functions/items/item_type_functions.cpp`
 
+#### `ItemType:getItemLevel()`
+
+- Returns: `number|nil`
+- Source: `src/lua/functions/items/item_type_functions.cpp`
+
 #### `ItemType:getName()`
 
 - Returns: `string|nil`
@@ -1865,6 +1890,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 #### `ItemType:getPluralName()`
 
 - Returns: `string|nil`
+- Source: `src/lua/functions/items/item_type_functions.cpp`
+
+#### `ItemType:getRarity()`
+
+- Returns: `number|nil`
 - Source: `src/lua/functions/items/item_type_functions.cpp`
 
 #### `ItemType:getRequiredLevel()`
@@ -4200,6 +4230,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Returns: `number|nil`
 - Source: `src/lua/functions/creatures/player/player_functions.cpp`
 
+#### `Player:getGearScore()`
+
+- Returns: `number|nil`
+- Source: `src/lua/functions/creatures/player/player_functions.cpp`
+
 #### `Player:getGrindingXpBoost()`
 
 - Returns: `number|nil`
@@ -4730,6 +4765,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Returns: `boolean|nil`
 - Source: `src/lua/functions/creatures/player/player_functions.cpp`
 
+#### `Player:recalculateGearScore()`
+
+- Returns: `boolean`
+- Source: `src/lua/functions/creatures/player/player_functions.cpp`
+
 #### `Player:reloadData()`
 
 - Returns: `boolean|nil`
@@ -5031,6 +5071,11 @@ C++ Lua binding handlers and registration lines can override inferred signatures
 - Source: `src/lua/functions/creatures/player/player_functions.cpp`
 
 #### `Player:setForgeDusts(arg2: number)`
+
+- Returns: `boolean`
+- Source: `src/lua/functions/creatures/player/player_functions.cpp`
+
+#### `Player:setGearScore(arg2: number)`
 
 - Returns: `boolean`
 - Source: `src/lua/functions/creatures/player/player_functions.cpp`

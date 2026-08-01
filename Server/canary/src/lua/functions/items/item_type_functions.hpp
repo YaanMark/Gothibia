@@ -79,5 +79,8 @@ private:
 	static int luaItemTypeGetVocationString(lua_State* L);
 	static int luaItemTypeGetElementalBond(lua_State* L);
 
+	static int luaItemTypeGetItemLevel(lua_State* L);
+	static int luaItemTypeGetRarity(lua_State* L);
+
 	static int luaItemTypeHasSubType(lua_State* L);
 };

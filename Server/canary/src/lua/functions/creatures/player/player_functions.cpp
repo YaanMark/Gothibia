@@ -187,7 +187,9 @@ void PlayerFunctions::init(lua_State* L) {
 	Lua::registerMethod(L, "Player", "addExperience", PlayerFunctions::luaPlayerAddExperience);
 	Lua::registerMethod(L, "Player", "removeExperience", PlayerFunctions::luaPlayerRemoveExperience);
 	Lua::registerMethod(L, "Player", "getLevel", PlayerFunctions::luaPlayerGetLevel);
-
+	Lua::registerMethod(L, "Player", "getGearScore", PlayerFunctions::luaPlayerGetGearScore);
+	Lua::registerMethod(L, "Player", "setGearScore", PlayerFunctions::luaPlayerSetGearScore);
+	Lua::registerMethod(L, "Player", "recalculateGearScore", PlayerFunctions::luaPlayerRecalculateGearScore);
 	Lua::registerMethod(L, "Player", "getMagicShieldCapacityFlat", PlayerFunctions::luaPlayerGetMagicShieldCapacityFlat);
 	Lua::registerMethod(L, "Player", "getMagicShieldCapacityPercent", PlayerFunctions::luaPlayerGetMagicShieldCapacityPercent);
 
@@ -5633,5 +5635,37 @@ int PlayerFunctions::luaPlayerIsLivestreamViewer(lua_State* L) {
 	}
 
 	Lua::pushBoolean(L, g_livestream().isViewer(player->getClient()));
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerGetGearScore(lua_State* L) {
+	std::shared_ptr<Player> player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (player) {
+		lua_pushnumber(L, player->getGearScore());
+	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerSetGearScore(lua_State* L) {
+	std::shared_ptr<Player> player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (player) {
+		player->gearScore = Lua::getNumber<uint32_t>(L, 2);
+		Lua::pushBoolean(L, true);
+	} else {
+		Lua::pushBoolean(L, false);
+	}
+	return 1;
+}
+
+int PlayerFunctions::luaPlayerRecalculateGearScore(lua_State* L) {
+	std::shared_ptr<Player> player = Lua::getUserdataShared<Player>(L, 1, "Player");
+	if (player) {
+		player->recalculateGearScore();
+		Lua::pushBoolean(L, true);
+	} else {
+		Lua::pushBoolean(L, false);
+	}
 	return 1;
 }

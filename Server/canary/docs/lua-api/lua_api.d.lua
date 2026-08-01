@@ -1272,6 +1272,9 @@ function Item:getImbuement() end
 ---@return boolean|number
 function Item:getImbuementSlot() end
 
+---@return number|nil
+function Item:getItemLevel() end
+
 ---@return string|nil
 function Item:getName() end
 
@@ -1289,6 +1292,12 @@ function Item:getPluralName() end
 
 ---@return nil|Position
 function Item:getPosition() end
+
+---@return number|nil
+function Item:getRarity() end
+
+---@return number|nil
+function Item:getRefine() end
 
 ---@return boolean|string
 function Item:getShader() end
@@ -1389,6 +1398,10 @@ function Item:setDuration(minDuration, maxDuration, decayTo, showDuration) end
 ---@return boolean
 function Item:setOwner(creatureOrCreatureId) end
 
+---@param arg2 number
+---@return boolean
+function Item:setRefine(arg2) end
+
 ---@param shaderName string
 ---@return boolean
 function Item:setShader(shaderName) end
@@ -1483,11 +1496,17 @@ function ItemType:getId() end
 ---@return number|nil
 function ItemType:getImbuementSlot() end
 
+---@return number|nil
+function ItemType:getItemLevel() end
+
 ---@return string|nil
 function ItemType:getName() end
 
 ---@return string|nil
 function ItemType:getPluralName() end
+
+---@return number|nil
+function ItemType:getRarity() end
 
 ---@return number|nil
 function ItemType:getRequiredLevel() end
@@ -3334,6 +3353,9 @@ function Player:getFreeBackpackSlots() end
 function Player:getFreeCapacity() end
 
 ---@return number|nil
+function Player:getGearScore() end
+
+---@return number|nil
 function Player:getGrindingXpBoost() end
 
 ---@return nil|Group
@@ -3697,6 +3719,9 @@ function Player:popupFYI(message) end
 ---@return boolean|nil
 function Player:preyThirdSlot(arg2) end
 
+---@return boolean
+function Player:recalculateGearScore() end
+
 ---@return boolean|nil
 function Player:reloadData() end
 
@@ -3961,6 +3986,10 @@ function Player:setFamiliarLooktype(lookType) end
 ---@param arg2 number
 ---@return boolean
 function Player:setForgeDusts(arg2) end
+
+---@param arg2 number
+---@return boolean
+function Player:setGearScore(arg2) end
 
 ---@param enabled boolean
 ---@return boolean|nil

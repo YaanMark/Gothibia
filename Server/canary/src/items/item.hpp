@@ -450,6 +450,25 @@ public:
 		}
 		return items[id].imbuementSlot;
 	}
+
+	uint8_t getRefine() const {
+		if (hasAttribute(ItemAttribute_t::REFINE)) {
+			return getAttribute<uint8_t>(ItemAttribute_t::REFINE);
+		}
+		return 0;
+	}
+	void setRefine(uint8_t level) {
+		setAttribute(ItemAttribute_t::REFINE, level);
+	}
+	void addRefine() {
+		setRefine(getRefine() + 1);
+	}
+	uint16_t getItemLevel() const {
+		return items[id].itemLevel;
+	}
+	uint8_t getRarity() const {
+		return items[id].rarity;
+	}
 	int32_t getSlotPosition() const {
 		return items[id].slotPosition;
 	}

@@ -246,6 +246,7 @@ enum AttrTypes_t {
 	ATTR_OWNER = 43,
 	ATTR_OBTAINCONTAINER = 44,
 	ATTR_MANTRA = 45,
+	ATTR_REFINE = 46,
 
 	// Always the last
 	ATTR_NONE = 0
@@ -641,6 +642,8 @@ enum ItemParseAttributes_t {
 	ITEM_PARSE_AUGMENT,
 	ITEM_PARSE_ELEMENTALBOND,
 	ITEM_PARSE_PROFICIENCY,
+	ITEM_PARSE_ITEMLEVEL,
+	ITEM_PARSE_RARITY,
 };
 
 struct ImbuementInfo {
