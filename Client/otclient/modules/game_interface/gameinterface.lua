@@ -783,7 +783,7 @@ function createThingMenu(menuPosition, lookThing, useThing, creatureThing)
             if creatureThing:getPosition().z == localPosition.z then
                 if creatureThing:isNpc() then
                     menu:addOption(tr('Talk'), function()
-                        g_game.talk("hi")
+                        g_game.talkPrivate(MessageModes.NpcTo, creatureThing:getName(), "hi")
                     end)
                 end
 
@@ -965,22 +965,18 @@ function processMouseAction(menuPosition, mouseButton, autoWalkPos, lookThing, u
     local smartLeftClick = modules.client_options.getOption('smartLeftClick')
     local classicControls = modules.client_options.getOption('classicControl')
 
-    -- Classic controls: right-click on NPC says "hi"
-    if creatureThing and creatureThing:isNpc() and mouseButton == MouseRightButton and 
-    keyboardModifiers == KeyboardNoModifier then
-        -- In classic controls, always allow NPC interaction
-        -- In non-classic controls, check the talkOnRightClick option
-        if classicControls or modules.client_options.getOption('talkOnRightClick') then
-            local player = g_game.getLocalPlayer()
-            if player then
-                local playerPos = player:getPosition()
-                local npcPos = creatureThing:getPosition()
-                if playerPos.z == npcPos.z then
-                    local dist = math.max(math.abs(playerPos.x - npcPos.x), math.abs(playerPos.y - npcPos.y))
-                    if dist <= 3 then
-                        g_game.talk("hi")
-                        return true
-                    end
+    -- Force NPC interaction on Right-Click without modifiers (Silent 'hi')
+    if creatureThing and creatureThing:isNpc() and mouseButton == MouseRightButton and keyboardModifiers == KeyboardNoModifier then
+        local player = g_game.getLocalPlayer()
+        if player then
+            local playerPos = player:getPosition()
+            local npcPos = creatureThing:getPosition()
+            if playerPos.z == npcPos.z then
+                local dist = math.max(math.abs(playerPos.x - npcPos.x), math.abs(playerPos.y - npcPos.y))
+                if dist <= 3 then
+                    -- Send "hi" silently through the NPC channel to trigger the server's NpcSystem
+                    g_game.talkPrivate(MessageModes.NpcTo, creatureThing:getName(), "hi")
+                    return true
                 end
             end
         end
